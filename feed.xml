@@ -1,838 +1,674 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.getbootstrap.com/" rel="alternate" type="text/html" /><updated>2021-02-05T16:05:09+00:00</updated><id>https://blog.getbootstrap.com/feed.xml</id><title type="html">Bootstrap Blog</title><subtitle>Official blog for the Bootstrap framework.</subtitle><author><name>Mark Otto</name></author><entry><title type="html">Bootstrap v4.6.0</title><link href="https://blog.getbootstrap.com/2021/01/19/bootstrap-4.6.0/" rel="alternate" type="text/html" title="Bootstrap v4.6.0" /><published>2021-01-19T21:30:00+00:00</published><updated>2021-01-19T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2021/01/19/bootstrap-4.6.0</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/01/19/bootstrap-4.6.0/">&lt;p&gt;Bootstrap v4.6.0 is here with a couple new features, several bugfixes, and some awesome documentation updates to make v4 more maintainable alongside our development of v5.&lt;/p&gt;
-
-&lt;p&gt;Read on for the highlighted changes or &lt;a href=&quot;https://getbootstrap.com/docs/4.6/&quot;&gt;head to the v4.6 docs&lt;/a&gt; to see the latest in action.&lt;/p&gt;
-
-&lt;h2 id=&quot;hugo&quot;&gt;Hugo!&lt;/h2&gt;
-
-&lt;p&gt;The biggest change in v4.6.0 is under the hood—we’ve overhauled our development environment to match that of v5. Our v4.x docs are now powered by &lt;a href=&quot;https://gohugo.io&quot;&gt;Hugo&lt;/a&gt;. That means no more Ruby dependency for v4.x, improved maintainability between major versions, faster development, and incredibly fast build times compared to Jekyll.&lt;/p&gt;
-
-&lt;h2 id=&quot;changes&quot;&gt;Changes&lt;/h2&gt;
-
-&lt;p&gt;Also available in the &lt;a href=&quot;https://github.com/twbs/bootstrap/releases/tag/v4.6.0&quot;&gt;v4.6.0 release on GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;highlights&quot;&gt;Highlights&lt;/h3&gt;
-
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bootstrap Blog</title>
+    <link>https://blog.getbootstrap.com/</link>
+    <description>Recent content on Bootstrap Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 19 Jan 2021 21:30:00 +0000</lastBuildDate><atom:link href="https://blog.getbootstrap.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bootstrap v4.6.0</title>
+      <link>https://blog.getbootstrap.com/2021/01/19/bootstrap-4.6.0/</link>
+      <pubDate>Tue, 19 Jan 2021 21:30:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2021/01/19/bootstrap-4.6.0/</guid>
+      <description>&lt;p&gt;Bootstrap v4.6.0 is here with a couple new features, several bugfixes, and some awesome documentation updates to make v4 more maintainable alongside our development of v5.&lt;/p&gt;
+&lt;p&gt;Read on for the highlighted changes or &lt;a href=&#34;https://getbootstrap.com/docs/4.6/&#34;&gt;head to the v4.6 docs&lt;/a&gt; to see the latest in action.&lt;/p&gt;
+&lt;h2 id=&#34;hugo&#34;&gt;Hugo!&lt;/h2&gt;
+&lt;p&gt;The biggest change in v4.6.0 is under the hood—we&amp;rsquo;ve overhauled our development environment to match that of v5. Our v4.x docs are now powered by &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. That means no more Ruby dependency for v4.x, improved maintainability between major versions, faster development, and incredibly fast build times compared to Jekyll.&lt;/p&gt;
+&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;
+&lt;p&gt;Also available in the &lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v4.6.0&#34;&gt;v4.6.0 release on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;highlights&#34;&gt;Highlights&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;Tooltips and popovers can have custom clases via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;customClass&lt;/code&gt; option.&lt;/li&gt;
-  &lt;li&gt;Added new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.navbar-nav-scroll&lt;/code&gt; class for scrolling expanded navbar contents on mobile devices.&lt;/li&gt;
-  &lt;li&gt;For improved accessibiliy, spinners now slow down when &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;prefers-reduced-motion&lt;/code&gt; is enabled.&lt;/li&gt;
-  &lt;li&gt;v4.x docs are now built on Hugo for easier maintenance and backports from v5.x.&lt;/li&gt;
-  &lt;li&gt;Darkened &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;background-color&lt;/code&gt; of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.dropdown-item&lt;/code&gt; for improved hover state contrast, and ligthened the disabled &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.dropdown-item&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;color&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Improved alignment of form validation tooltips.&lt;/li&gt;
-  &lt;li&gt;File inputs no longer extend beyond their containers.&lt;/li&gt;
+&lt;li&gt;Tooltips and popovers can have custom clases via &lt;code&gt;customClass&lt;/code&gt; option.&lt;/li&gt;
+&lt;li&gt;Added new &lt;code&gt;.navbar-nav-scroll&lt;/code&gt; class for scrolling expanded navbar contents on mobile devices.&lt;/li&gt;
+&lt;li&gt;For improved accessibiliy, spinners now slow down when &lt;code&gt;prefers-reduced-motion&lt;/code&gt; is enabled.&lt;/li&gt;
+&lt;li&gt;v4.x docs are now built on Hugo for easier maintenance and backports from v5.x.&lt;/li&gt;
+&lt;li&gt;Darkened &lt;code&gt;background-color&lt;/code&gt; of &lt;code&gt;.dropdown-item&lt;/code&gt; for improved hover state contrast, and ligthened the disabled &lt;code&gt;.dropdown-item&lt;/code&gt; &lt;code&gt;color&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Improved alignment of form validation tooltips.&lt;/li&gt;
+&lt;li&gt;File inputs no longer extend beyond their containers.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&quot;css&quot;&gt;CSS&lt;/h3&gt;
-
+&lt;h3 id=&#34;css&#34;&gt;CSS&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31557&quot;&gt;#31557&lt;/a&gt;: Fix form validation tooltip alignment&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31657&quot;&gt;#31657&lt;/a&gt;: Handle the Ubuntu sans-serif case&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31700&quot;&gt;#31700&lt;/a&gt;: Suppress flexbox side effects in breadcrumb&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31882&quot;&gt;#31882&lt;/a&gt;: Slow down spinners when prefers-reduced-motion&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31886&quot;&gt;#31886&lt;/a&gt;: Fixed: Undefined mixin “deprecate” when importing “bootstrap-grid-scss”&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32141&quot;&gt;#32141&lt;/a&gt;: Use correct value order&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32145&quot;&gt;#32145&lt;/a&gt;: Avoid invisible real file input “spilling” out of container&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32160&quot;&gt;#32160&lt;/a&gt;: Add overflow suppression to custom file label&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32211&quot;&gt;#32211&lt;/a&gt;: Move negative margin-bottom from .nav-item to .nav-link&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32212&quot;&gt;#32212&lt;/a&gt;: Remove needless Stylelint disables&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32833&quot;&gt;#32833&lt;/a&gt;: Add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.navbar-nav-scroll&lt;/code&gt; for vertical scrolling of navbar content&lt;/li&gt;
-  &lt;li&gt;Add two new variables for pagination border-radius values; backport of &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32423&quot;&gt;#32423&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Remove old/unnecessary reboot bug fix; backport of &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32631&quot;&gt;#32631&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Suppress focus outline for buttons when it shouldn’t be visible in Chromium; backport of &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32689&quot;&gt;#32689&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Consistently use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;outline:0&lt;/code&gt; rather than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;outline:none&lt;/code&gt;; backport of &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32751&quot;&gt;#32751&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Darken dropdown item hover style; backport of &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32754&quot;&gt;#32754&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Lighten disabled dropdown text to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$gray-500&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31557&#34;&gt;#31557&lt;/a&gt;: Fix form validation tooltip alignment&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31657&#34;&gt;#31657&lt;/a&gt;: Handle the Ubuntu sans-serif case&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31700&#34;&gt;#31700&lt;/a&gt;: Suppress flexbox side effects in breadcrumb&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31882&#34;&gt;#31882&lt;/a&gt;: Slow down spinners when prefers-reduced-motion&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31886&#34;&gt;#31886&lt;/a&gt;: Fixed: Undefined mixin &amp;ldquo;deprecate&amp;rdquo; when importing &amp;ldquo;bootstrap-grid-scss&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32141&#34;&gt;#32141&lt;/a&gt;: Use correct value order&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32145&#34;&gt;#32145&lt;/a&gt;: Avoid invisible real file input &amp;ldquo;spilling&amp;rdquo; out of container&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32160&#34;&gt;#32160&lt;/a&gt;: Add overflow suppression to custom file label&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32211&#34;&gt;#32211&lt;/a&gt;: Move negative margin-bottom from .nav-item to .nav-link&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32212&#34;&gt;#32212&lt;/a&gt;: Remove needless Stylelint disables&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32833&#34;&gt;#32833&lt;/a&gt;: Add &lt;code&gt;.navbar-nav-scroll&lt;/code&gt; for vertical scrolling of navbar content&lt;/li&gt;
+&lt;li&gt;Add two new variables for pagination border-radius values; backport of &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32423&#34;&gt;#32423&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remove old/unnecessary reboot bug fix; backport of &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32631&#34;&gt;#32631&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Suppress focus outline for buttons when it shouldn&amp;rsquo;t be visible in Chromium; backport of &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32689&#34;&gt;#32689&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Consistently use &lt;code&gt;outline:0&lt;/code&gt; rather than &lt;code&gt;outline:none&lt;/code&gt;; backport of &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32751&#34;&gt;#32751&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Darken dropdown item hover style; backport of &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32754&#34;&gt;#32754&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lighten disabled dropdown text to &lt;code&gt;$gray-500&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&quot;js&quot;&gt;JS&lt;/h3&gt;
-
+&lt;h3 id=&#34;js&#34;&gt;JS&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31820&quot;&gt;#31820&lt;/a&gt;: Check for data-interval on the first slide of carousel&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31834&quot;&gt;#31834&lt;/a&gt;/&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32225&quot;&gt;#32225&lt;/a&gt;: tooltip/popover: add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;customClass&lt;/code&gt; option&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32001&quot;&gt;#32001&lt;/a&gt;: Move &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;js/src/index.js&lt;/code&gt; one folder up&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32045&quot;&gt;#32045&lt;/a&gt;: tests: fix sanitizer test&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32220&quot;&gt;#32220&lt;/a&gt;: Don’t hide modal when &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.keyboard&lt;/code&gt; is false&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32312&quot;&gt;#32312&lt;/a&gt;: build-plugins: switch to “bundled” for babel helpers&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31820&#34;&gt;#31820&lt;/a&gt;: Check for data-interval on the first slide of carousel&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31834&#34;&gt;#31834&lt;/a&gt;/&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32225&#34;&gt;#32225&lt;/a&gt;: tooltip/popover: add a &lt;code&gt;customClass&lt;/code&gt; option&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32001&#34;&gt;#32001&lt;/a&gt;: Move &lt;code&gt;js/src/index.js&lt;/code&gt; one folder up&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32045&#34;&gt;#32045&lt;/a&gt;: tests: fix sanitizer test&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32220&#34;&gt;#32220&lt;/a&gt;: Don&amp;rsquo;t hide modal when &lt;code&gt;config.keyboard&lt;/code&gt; is false&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32312&#34;&gt;#32312&lt;/a&gt;: build-plugins: switch to &amp;ldquo;bundled&amp;rdquo; for babel helpers&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&quot;docs&quot;&gt;Docs&lt;/h3&gt;
-
+&lt;h3 id=&#34;docs&#34;&gt;Docs&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31861&quot;&gt;#31861&lt;/a&gt;: Split up dropdown sizing docs to improve rendering&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31892&quot;&gt;#31892&lt;/a&gt;: Remove redundant visually hidden “(current)” from pagination controls&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31893&quot;&gt;#31893&lt;/a&gt;: manifest.json: Switch to relative URLs so that we don’t need to change the path with every major/minor release&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31898&quot;&gt;#31898&lt;/a&gt;: switch to suggesting jsDelivr as a CDN&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31904&quot;&gt;#31904&lt;/a&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;docs(forms): use a legend for fieldset instead of aria-label&lt;/li&gt;
-      &lt;li&gt;docs(forms): fix incorrect legend nesting in fieldset&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31936&quot;&gt;#31936&lt;/a&gt;: forms: change inline custom radio name&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31951&quot;&gt;#31951&lt;/a&gt;: Update anchor-js to v4.3.0&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31960&quot;&gt;#31960&lt;/a&gt;: Explicitly mention emoji fonts, tweak sentence in typography&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31981&quot;&gt;#31981&lt;/a&gt;: list-group.md: fix snippet&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32005&quot;&gt;#32005&lt;/a&gt;: Remove &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bugreport.apple.com&lt;/code&gt; since it doesn’t work&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32015&quot;&gt;#32015&lt;/a&gt;: Fix redirects&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32050&quot;&gt;#32050&lt;/a&gt;: Make docs anchorjs links darker on keyboard focus&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32054&quot;&gt;#32054&lt;/a&gt;: Add callouts about using light colors ideally on a dark background&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32077&quot;&gt;#32077&lt;/a&gt;: Switch to Hugo&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32083&quot;&gt;#32083&lt;/a&gt;: mention “Liberation Sans”&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32087&quot;&gt;#32087&lt;/a&gt;: download.md: link to JS files comparison too&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32094&quot;&gt;#32094&lt;/a&gt;: Changes to navbar documentation/explanation&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32106&quot;&gt;#32106&lt;/a&gt;: Clarify JS bundle docs once more for v4&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32137&quot;&gt;#32137&lt;/a&gt;: input-group.md: fix wrong class &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.visually-hidden&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32138&quot;&gt;#32138&lt;/a&gt;: navbar.md: remove &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;loading=lazy&lt;/code&gt; from snippets&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32147&quot;&gt;#32147&lt;/a&gt;: Fix caniuse.com redirects&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32151&quot;&gt;#32151&lt;/a&gt;: Mention user-select-all support in docs&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32196&quot;&gt;#32196&lt;/a&gt;: homepage: split snippets and show copy buttons&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32203&quot;&gt;#32203&lt;/a&gt;: Switch to jsDelivr for the remaining docs assets&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32223&quot;&gt;#32223&lt;/a&gt;: introduction: split comments&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32247&quot;&gt;#32247&lt;/a&gt;: Fix typos in tooltip/popover docs&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32253&quot;&gt;#32253&lt;/a&gt;: Add Russian translation&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32363&quot;&gt;#32363&lt;/a&gt;: Remove useless &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.text-left&lt;/code&gt; in Layout / Overview&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32399&quot;&gt;#32399&lt;/a&gt;: Remove duplicated “follow Bootstrap on Twitter” link in Community section&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32457&quot;&gt;#32457&lt;/a&gt;: Add mention of the bs-custom-file-input plugin needed for the custom file input&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32461&quot;&gt;#32461&lt;/a&gt;: style clipboard button on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:focus&lt;/code&gt;, not just &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:hover&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32462&quot;&gt;#32462&lt;/a&gt;: Replace Lorem Ipsum placeholder text with more representative (or at least english language) text&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32634&quot;&gt;#32634&lt;/a&gt;: Remove incorrect mention of dropdowns for dynamic tab behavior&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32639&quot;&gt;#32639&lt;/a&gt;: v4: Add an actual &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data-touch=&quot;false&quot;&lt;/code&gt; example in the carousel docs&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32728&quot;&gt;#32728&lt;/a&gt;: add v5.0 in versions&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32761&quot;&gt;#32761&lt;/a&gt;: Mention stretched-link constraints with table elements&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32789&quot;&gt;#32789&lt;/a&gt;: Remove &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;role=&quot;button&quot;&lt;/code&gt; from CTA links in carousel example&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32791&quot;&gt;#32791&lt;/a&gt;: Docs v4: Sass implementation and rounding precision&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32809&quot;&gt;#32809&lt;/a&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;Clarify Sass import and customize docs for how to modify variable defaults&lt;/li&gt;
-      &lt;li&gt;Add an npm starter project callout to a few pages&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32827&quot;&gt;#32827&lt;/a&gt;: Add a live toast example to the docs&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32759&quot;&gt;#32759&lt;/a&gt;: Mention CSP and embedded SVGs in v4 docs&lt;/li&gt;
-  &lt;li&gt;docs(dropdowns): clarify where is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.show&lt;/code&gt; applied&lt;/li&gt;
-  &lt;li&gt;Require &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.has-validation&lt;/code&gt; for input groups with validation&lt;/li&gt;
-  &lt;li&gt;Fix mobile menu jump &amp;amp; double border&lt;/li&gt;
-  &lt;li&gt;Remove double spaces from homepage SVGs&lt;/li&gt;
-  &lt;li&gt;browserconfig.xml: switch to relative image path&lt;/li&gt;
-  &lt;li&gt;Tweak the wording for collapse to indicate button is preferred/more semantic; backport of &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32632&quot;&gt;#32632&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Clarify the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$enable-shadows&lt;/code&gt; option in our docs; backport of &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32685&quot;&gt;#32685&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;examples&quot;&gt;Examples&lt;/h3&gt;
-
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31861&#34;&gt;#31861&lt;/a&gt;: Split up dropdown sizing docs to improve rendering&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31892&#34;&gt;#31892&lt;/a&gt;: Remove redundant visually hidden &amp;ldquo;(current)&amp;rdquo; from pagination controls&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31893&#34;&gt;#31893&lt;/a&gt;: manifest.json: Switch to relative URLs so that we don&amp;rsquo;t need to change the path with every major/minor release&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31898&#34;&gt;#31898&lt;/a&gt;: switch to suggesting jsDelivr as a CDN&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31904&#34;&gt;#31904&lt;/a&gt;:
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31979&quot;&gt;#31979&lt;/a&gt;: v4 Examples/Floating-labels: fix bad behavior with autofill&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32198&quot;&gt;#32198&lt;/a&gt;: examples: add the version number in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;title&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;docs(forms): use a legend for fieldset instead of aria-label&lt;/li&gt;
+&lt;li&gt;docs(forms): fix incorrect legend nesting in fieldset&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&quot;misc&quot;&gt;Misc&lt;/h3&gt;
-
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31936&#34;&gt;#31936&lt;/a&gt;: forms: change inline custom radio name&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31951&#34;&gt;#31951&lt;/a&gt;: Update anchor-js to v4.3.0&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31960&#34;&gt;#31960&lt;/a&gt;: Explicitly mention emoji fonts, tweak sentence in typography&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31981&#34;&gt;#31981&lt;/a&gt;: list-group.md: fix snippet&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32005&#34;&gt;#32005&lt;/a&gt;: Remove &lt;code&gt;bugreport.apple.com&lt;/code&gt; since it doesn&amp;rsquo;t work&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32015&#34;&gt;#32015&lt;/a&gt;: Fix redirects&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32050&#34;&gt;#32050&lt;/a&gt;: Make docs anchorjs links darker on keyboard focus&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32054&#34;&gt;#32054&lt;/a&gt;: Add callouts about using light colors ideally on a dark background&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32077&#34;&gt;#32077&lt;/a&gt;: Switch to Hugo&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32083&#34;&gt;#32083&lt;/a&gt;: mention &amp;ldquo;Liberation Sans&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32087&#34;&gt;#32087&lt;/a&gt;: download.md: link to JS files comparison too&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32094&#34;&gt;#32094&lt;/a&gt;: Changes to navbar documentation/explanation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32106&#34;&gt;#32106&lt;/a&gt;: Clarify JS bundle docs once more for v4&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32137&#34;&gt;#32137&lt;/a&gt;: input-group.md: fix wrong class &lt;code&gt;.visually-hidden&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32138&#34;&gt;#32138&lt;/a&gt;: navbar.md: remove &lt;code&gt;loading=lazy&lt;/code&gt; from snippets&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32147&#34;&gt;#32147&lt;/a&gt;: Fix caniuse.com redirects&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32151&#34;&gt;#32151&lt;/a&gt;: Mention user-select-all support in docs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32196&#34;&gt;#32196&lt;/a&gt;: homepage: split snippets and show copy buttons&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32203&#34;&gt;#32203&lt;/a&gt;: Switch to jsDelivr for the remaining docs assets&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32223&#34;&gt;#32223&lt;/a&gt;: introduction: split comments&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32247&#34;&gt;#32247&lt;/a&gt;: Fix typos in tooltip/popover docs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32253&#34;&gt;#32253&lt;/a&gt;: Add Russian translation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32363&#34;&gt;#32363&lt;/a&gt;: Remove useless &lt;code&gt;.text-left&lt;/code&gt; in Layout / Overview&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32399&#34;&gt;#32399&lt;/a&gt;: Remove duplicated &amp;ldquo;follow Bootstrap on Twitter&amp;rdquo; link in Community section&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32457&#34;&gt;#32457&lt;/a&gt;: Add mention of the bs-custom-file-input plugin needed for the custom file input&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32461&#34;&gt;#32461&lt;/a&gt;: style clipboard button on &lt;code&gt;:focus&lt;/code&gt;, not just &lt;code&gt;:hover&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32462&#34;&gt;#32462&lt;/a&gt;: Replace Lorem Ipsum placeholder text with more representative (or at least english language) text&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32634&#34;&gt;#32634&lt;/a&gt;: Remove incorrect mention of dropdowns for dynamic tab behavior&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32639&#34;&gt;#32639&lt;/a&gt;: v4: Add an actual &lt;code&gt;data-touch=&amp;quot;false&amp;quot;&lt;/code&gt; example in the carousel docs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32728&#34;&gt;#32728&lt;/a&gt;: add v5.0 in versions&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32761&#34;&gt;#32761&lt;/a&gt;: Mention stretched-link constraints with table elements&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32789&#34;&gt;#32789&lt;/a&gt;: Remove &lt;code&gt;role=&amp;quot;button&amp;quot;&lt;/code&gt; from CTA links in carousel example&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32791&#34;&gt;#32791&lt;/a&gt;: Docs v4: Sass implementation and rounding precision&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32809&#34;&gt;#32809&lt;/a&gt;:
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/29753&quot;&gt;#29753&lt;/a&gt;: Improve build/generate-sri.js regex&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32003&quot;&gt;#32003&lt;/a&gt;: CI: switch to Node.js 14&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32008&quot;&gt;#32008&lt;/a&gt;: Update Edge’s Rendering Engine on CONTRIBUTING.md&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32486&quot;&gt;#32486&lt;/a&gt;: BrowserStack: test on macOS Catalina instead of High Sierra&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32756&quot;&gt;#32756&lt;/a&gt;: Stylelint: disallow some property values&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Fix for npm 7.x&lt;/strong&gt; package.json: move &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;version_short&lt;/code&gt; variable under the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config&lt;/code&gt; object; backport of &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32737&quot;&gt;#32737&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Update build-examples script so that the resulting examples zip file includes only the needed files&lt;/li&gt;
-  &lt;li&gt;Various CI tweaks&lt;/li&gt;
-  &lt;li&gt;Updated devDependencies&lt;/li&gt;
+&lt;li&gt;Clarify Sass import and customize docs for how to modify variable defaults&lt;/li&gt;
+&lt;li&gt;Add an npm starter project callout to a few pages&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h2 id=&quot;next-up&quot;&gt;Next up&lt;/h2&gt;
-
-&lt;p&gt;Our second beta of v5 is coming. We’re working on ironing on some kinks from the update to Popover 2, which has taken longer than expected. This affects our dropdowns, popovers, and tooltips. Once some of the major issues are resolved, we’ll ship our next beta.&lt;/p&gt;
-
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32827&#34;&gt;#32827&lt;/a&gt;: Add a live toast example to the docs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32759&#34;&gt;#32759&lt;/a&gt;: Mention CSP and embedded SVGs in v4 docs&lt;/li&gt;
+&lt;li&gt;docs(dropdowns): clarify where is &lt;code&gt;.show&lt;/code&gt; applied&lt;/li&gt;
+&lt;li&gt;Require &lt;code&gt;.has-validation&lt;/code&gt; for input groups with validation&lt;/li&gt;
+&lt;li&gt;Fix mobile menu jump &amp;amp; double border&lt;/li&gt;
+&lt;li&gt;Remove double spaces from homepage SVGs&lt;/li&gt;
+&lt;li&gt;browserconfig.xml: switch to relative image path&lt;/li&gt;
+&lt;li&gt;Tweak the wording for collapse to indicate button is preferred/more semantic; backport of &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32632&#34;&gt;#32632&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Clarify the &lt;code&gt;$enable-shadows&lt;/code&gt; option in our docs; backport of &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32685&#34;&gt;#32685&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31979&#34;&gt;#31979&lt;/a&gt;: v4 Examples/Floating-labels: fix bad behavior with autofill&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32198&#34;&gt;#32198&lt;/a&gt;: examples: add the version number in &lt;code&gt;title&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;misc&#34;&gt;Misc&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/29753&#34;&gt;#29753&lt;/a&gt;: Improve build/generate-sri.js regex&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32003&#34;&gt;#32003&lt;/a&gt;: CI: switch to Node.js 14&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32008&#34;&gt;#32008&lt;/a&gt;: Update Edge&amp;rsquo;s Rendering Engine on CONTRIBUTING.md&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32486&#34;&gt;#32486&lt;/a&gt;: BrowserStack: test on macOS Catalina instead of High Sierra&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32756&#34;&gt;#32756&lt;/a&gt;: Stylelint: disallow some property values&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fix for npm 7.x&lt;/strong&gt; package.json: move &lt;code&gt;version_short&lt;/code&gt; variable under the &lt;code&gt;config&lt;/code&gt; object; backport of &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32737&#34;&gt;#32737&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update build-examples script so that the resulting examples zip file includes only the needed files&lt;/li&gt;
+&lt;li&gt;Various CI tweaks&lt;/li&gt;
+&lt;li&gt;Updated devDependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;next-up&#34;&gt;Next up&lt;/h2&gt;
+&lt;p&gt;Our second beta of v5 is coming. We&amp;rsquo;re working on ironing on some kinks from the update to Popover 2, which has taken longer than expected. This affects our dropdowns, popovers, and tooltips. Once some of the major issues are resolved, we&amp;rsquo;ll ship our next beta.&lt;/p&gt;
 &lt;p&gt;Please keep the feedback coming on what we can improve, how our releases are performing, and any other suggestions.&lt;/p&gt;
-
-&lt;h2 id=&quot;support-the-team&quot;&gt;Support the team&lt;/h2&gt;
-
-&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Bootstrap v4.6.0 is here with a couple new features, several bugfixes, and some awesome documentation updates to make v4 more maintainable alongside our development of v5.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap Icons v1.3.0</title><link href="https://blog.getbootstrap.com/2021/01/07/bootstrap-icons-1-3-0/" rel="alternate" type="text/html" title="Bootstrap Icons v1.3.0" /><published>2021-01-07T21:30:00+00:00</published><updated>2021-01-07T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2021/01/07/bootstrap-icons-1-3-0</id><content type="html" xml:base="https://blog.getbootstrap.com/2021/01/07/bootstrap-icons-1-3-0/">&lt;p&gt;Say hello to over 60 new icons with &lt;a href=&quot;https://icons.getbootstrap.com&quot;&gt;Bootstrap Icons v1.3.0&lt;/a&gt;! We focused our efforts on filling in some holes and expanding some coverage of a few categories. We’re super happy with how the new additions came out and hope y’all love them, too!&lt;/p&gt;
-
-&lt;p&gt;As usual, we also snuck in some bug fixes to existing icons and ours docs. After this release, we’re back to focusing on shipping updates to Bootstrap v5 and v4. More on that soon, and in the mean time, enjoy the new icons!&lt;/p&gt;
-
-&lt;h2 id=&quot;60-new-icons&quot;&gt;60+ new icons&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021/01/icons-130-new.png&quot; alt=&quot;New icons in v1.3.0&quot; style=&quot;border: 1px solid rgba(0,0,0,.15);&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here’s a look at the new icons in v1.3.0:&lt;/p&gt;
-
+&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
+&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&#39; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bootstrap Icons v1.3.0</title>
+      <link>https://blog.getbootstrap.com/2021/01/07/bootstrap-icons-1-3-0/</link>
+      <pubDate>Thu, 07 Jan 2021 21:30:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2021/01/07/bootstrap-icons-1-3-0/</guid>
+      <description>&lt;p&gt;Say hello to over 60 new icons with &lt;a href=&#34;https://icons.getbootstrap.com&#34;&gt;Bootstrap Icons v1.3.0&lt;/a&gt;! We focused our efforts on filling in some holes and expanding some coverage of a few categories. We’re super happy with how the new additions came out and hope y’all love them, too!&lt;/p&gt;
+&lt;p&gt;As usual, we also snuck in some bug fixes to existing icons and ours docs. After this release, we&amp;rsquo;re back to focusing on shipping updates to Bootstrap v5 and v4. More on that soon, and in the mean time, enjoy the new icons!&lt;/p&gt;
+&lt;h2 id=&#34;60-new-icons&#34;&gt;60+ new icons&lt;/h2&gt;
+&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2021/01/icons-130-new.png&#34; alt=&#34;New icons in v1.3.0&#34; style=&#34;border: 1px solid rgba(0,0,0,.15);&#34;&gt;
+&lt;p&gt;Here&amp;rsquo;s a look at the new icons in v1.3.0:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Added window-dock and window-sidebar&lt;/li&gt;
-  &lt;li&gt;Added two symmetry icons&lt;/li&gt;
-  &lt;li&gt;Added new stack icon&lt;/li&gt;
-  &lt;li&gt;Added two speedometer icons&lt;/li&gt;
-  &lt;li&gt;Added four save icons&lt;/li&gt;
-  &lt;li&gt;Added rulers icon&lt;/li&gt;
-  &lt;li&gt;Added filled variations for phone-vibrate, mouse, mouse2, mouse3, and four hand icons&lt;/li&gt;
-  &lt;li&gt;Added several border icons&lt;/li&gt;
-  &lt;li&gt;Added paint bucket&lt;/li&gt;
-  &lt;li&gt;Added four new badges (3D, AR, VR, WC)&lt;/li&gt;
-  &lt;li&gt;Added four lightbulb icons&lt;/li&gt;
-  &lt;li&gt;Added eyedropper&lt;/li&gt;
-  &lt;li&gt;Added mask icon&lt;/li&gt;
-  &lt;li&gt;Added three color palette icons&lt;/li&gt;
-  &lt;li&gt;Added layer-forward and layer-backward&lt;/li&gt;
-  &lt;li&gt;Added two eraser icons&lt;/li&gt;
-  &lt;li&gt;Added two megaphone icons&lt;/li&gt;
-  &lt;li&gt;Added four push pin icons&lt;/li&gt;
-  &lt;li&gt;Added Whatsapp and Telegram social icons&lt;/li&gt;
-  &lt;li&gt;Added dotted circle dash, circle plus, square dash, and square plus&lt;/li&gt;
+&lt;li&gt;Added window-dock and window-sidebar&lt;/li&gt;
+&lt;li&gt;Added two symmetry icons&lt;/li&gt;
+&lt;li&gt;Added new stack icon&lt;/li&gt;
+&lt;li&gt;Added two speedometer icons&lt;/li&gt;
+&lt;li&gt;Added four save icons&lt;/li&gt;
+&lt;li&gt;Added rulers icon&lt;/li&gt;
+&lt;li&gt;Added filled variations for phone-vibrate, mouse, mouse2, mouse3, and four hand icons&lt;/li&gt;
+&lt;li&gt;Added several border icons&lt;/li&gt;
+&lt;li&gt;Added paint bucket&lt;/li&gt;
+&lt;li&gt;Added four new badges (3D, AR, VR, WC)&lt;/li&gt;
+&lt;li&gt;Added four lightbulb icons&lt;/li&gt;
+&lt;li&gt;Added eyedropper&lt;/li&gt;
+&lt;li&gt;Added mask icon&lt;/li&gt;
+&lt;li&gt;Added three color palette icons&lt;/li&gt;
+&lt;li&gt;Added layer-forward and layer-backward&lt;/li&gt;
+&lt;li&gt;Added two eraser icons&lt;/li&gt;
+&lt;li&gt;Added two megaphone icons&lt;/li&gt;
+&lt;li&gt;Added four push pin icons&lt;/li&gt;
+&lt;li&gt;Added Whatsapp and Telegram social icons&lt;/li&gt;
+&lt;li&gt;Added dotted circle dash, circle plus, square dash, and square plus&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;Have some ideas for new icons we should consider? Open an issue to tell us about it!&lt;/p&gt;
-
-&lt;h2 id=&quot;cdn-quickstart-with-icon-fonts&quot;&gt;CDN quickstart with icon fonts&lt;/h2&gt;
-
-&lt;p&gt;Since we added icon fonts in v1.2.0, it’s been possible to use a CDN to deliver and use Bootstrap Icons in seconds. Include the stylesheet, place short HTML snippets where you want icons, and you’re done! If you want to include it yourself, here’s how.&lt;/p&gt;
-
+&lt;h2 id=&#34;cdn-quickstart-with-icon-fonts&#34;&gt;CDN quickstart with icon fonts&lt;/h2&gt;
+&lt;p&gt;Since we added icon fonts in v1.2.0, it&amp;rsquo;s been possible to use a CDN to deliver and use Bootstrap Icons in seconds. Include the stylesheet, place short HTML snippets where you want icons, and you&amp;rsquo;re done! If you want to include it yourself, here&amp;rsquo;s how.&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Include the Bootstrap Icons font stylesheet in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt; of your website. Or, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@import&lt;/code&gt; to include the stylesheet that way.&lt;/p&gt;
-
-    &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Option 1: Include in HTML --&amp;gt;&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c&quot;&gt;/* Option 2: Import via CSS */&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css&quot;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Add HTML snippets to include Bootstrap Icons where desired.&lt;/p&gt;
-
-    &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;bi-alarm&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Include the Bootstrap Icons font stylesheet in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; of your website. Or, use &lt;code&gt;@import&lt;/code&gt; to include the stylesheet that way.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!-- Option 1: Include in HTML --&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;link&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;rel&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;c&#34;&gt;/* Option 2: Import via CSS */&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add HTML snippets to include Bootstrap Icons where desired.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;bi-alarm&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;p&gt;Want to see it in action? We’ve put together a helpful &lt;a href=&quot;https://codepen.io/emdeoh/pen/NWRzbKM&quot;&gt;CodePen demo for using Bootstrap Icons fonts via CDN&lt;/a&gt;.&lt;/p&gt;
-
+&lt;p&gt;Want to see it in action? We&amp;rsquo;ve put together a helpful &lt;a href=&#34;https://codepen.io/emdeoh/pen/NWRzbKM&#34;&gt;CodePen demo for using Bootstrap Icons fonts via CDN&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;ProTip:&lt;/strong&gt; Most browsers do not allow SVG sprites to be used across domains, which is why having icon fonts (when SVGs are the preferrable and more accessible method of delivering icons) are so useful. Whenever possible, please use SVGs over icon fonts.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;
-
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
 &lt;p&gt;To get started, install via npm:&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap-icons
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can also &lt;a href=&quot;https://github.com/twbs/icons/releases/tag/v1.3.0&quot;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&quot;https://github.com/twbs/icons/releases/download/v1.3.0/bootstrap-icons-1.3.0.zip&quot;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
-
-&lt;h2 id=&quot;figma&quot;&gt;Figma&lt;/h2&gt;
-
-&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&quot;https://www.figma.com/file/UuL6jIPhUePmOVttDaQN8h/Bootstrap-Icons-v1.3.0?node-id=0%3A1&quot;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Say hello to over 60 new icons with Bootstrap Icons v1.3.0! We focused our efforts on filling in some holes and expanding some coverage of a few categories. We’re super happy with how the new additions came out and hope y’all love them, too!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap Icons v1.2.2</title><link href="https://blog.getbootstrap.com/2020/12/23/bootstrap-icons-1-2-2/" rel="alternate" type="text/html" title="Bootstrap Icons v1.2.2" /><published>2020-12-23T21:30:00+00:00</published><updated>2020-12-23T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2020/12/23/bootstrap-icons-1-2-2</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/12/23/bootstrap-icons-1-2-2/">&lt;p&gt;We’re ironing out the kinks in our new font files with Bootstrap Icons v1.2.2! We went back to the Figma file and ironed out all the fill-rule details to ensure our SVGs translated into font files properly.&lt;/p&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;npm i bootstrap-icons
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.3.0&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.3.0/bootstrap-icons-1.3.0.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
+&lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
+&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&#34;https://www.figma.com/file/UuL6jIPhUePmOVttDaQN8h/Bootstrap-Icons-v1.3.0?node-id=0%3A1&#34;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bootstrap Icons v1.2.2</title>
+      <link>https://blog.getbootstrap.com/2020/12/23/bootstrap-icons-1-2-2/</link>
+      <pubDate>Wed, 23 Dec 2020 21:30:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2020/12/23/bootstrap-icons-1-2-2/</guid>
+      <description>&lt;p&gt;We’re ironing out the kinks in our new font files with Bootstrap Icons v1.2.2! We went back to the Figma file and ironed out all the fill-rule details to ensure our SVGs translated into font files properly.&lt;/p&gt;
 &lt;p&gt;We also snuck in a few bug fixes to existing icons, docs, and some slight visual improvements to some existing icons. Get the details below!&lt;/p&gt;
-
-&lt;h2 id=&quot;font-files&quot;&gt;Font files&lt;/h2&gt;
-
-&lt;p&gt;Our icons fonts are (fingers crossed!) free of visual glitches that made so many unusable across Windows devices. For some reason macOS and iOS had no problems, but Windows butchered the font files. Turns out this was a result of inconsistent &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill-rule&quot;&gt;fill-rule&lt;/a&gt; values in our icons, and some font formats and renderers only support a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;non-zero&lt;/code&gt; fill rule. We revisited nearly every icon and got it all sorted out.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/12/icons-font-index.png&quot; alt=&quot;Icon fonts&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Massive shoutout to the &lt;a href=&quot;https://www.figma.com/community/plugin/771155994770327940&quot;&gt;Figma Fill Rule Editor plugin&lt;/a&gt; that made this relatively quick and painless to update. &lt;em&gt;You can even see in the plugin’s image below how this rule affects rendering of SVGs.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.figma.com/community/plugin/771155994770327940&quot;&gt;&lt;img src=&quot;/assets/img/2020/12/figma-fill-rule-editor.png&quot; alt=&quot;Figma Fill Rule Editor plugin&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/twbs/icons/pull/552&quot;&gt;Check out the PR&lt;/a&gt; for what’s changed under the hood.&lt;/p&gt;
-
-&lt;h2 id=&quot;updated-icons&quot;&gt;Updated icons&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/12/icons-realigned.png&quot; alt=&quot;Revised icons&quot; /&gt;&lt;/p&gt;
-
+&lt;h2 id=&#34;font-files&#34;&gt;Font files&lt;/h2&gt;
+&lt;p&gt;Our icons fonts are (fingers crossed!) free of visual glitches that made so many unusable across Windows devices. For some reason macOS and iOS had no problems, but Windows butchered the font files. Turns out this was a result of inconsistent &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill-rule&#34;&gt;fill-rule&lt;/a&gt; values in our icons, and some font formats and renderers only support a &lt;code&gt;non-zero&lt;/code&gt; fill rule. We revisited nearly every icon and got it all sorted out.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/12/icons-font-index.png&#34; alt=&#34;Icon fonts&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Massive shoutout to the &lt;a href=&#34;https://www.figma.com/community/plugin/771155994770327940&#34;&gt;Figma Fill Rule Editor plugin&lt;/a&gt; that made this relatively quick and painless to update. &lt;em&gt;You can even see in the plugin&amp;rsquo;s image below how this rule affects rendering of SVGs.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.figma.com/community/plugin/771155994770327940&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/12/figma-fill-rule-editor.png&#34; alt=&#34;Figma Fill Rule Editor plugin&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/icons/pull/552&#34;&gt;Check out the PR&lt;/a&gt; for what&amp;rsquo;s changed under the hood.&lt;/p&gt;
+&lt;h2 id=&#34;updated-icons&#34;&gt;Updated icons&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/12/icons-realigned.png&#34; alt=&#34;Revised icons&#34;&gt;&lt;/p&gt;
 &lt;p&gt;A few icons got touched up with the work for our font files to clean up paths and make them more visually pleasing.&lt;/p&gt;
-
 &lt;ul&gt;
-  &lt;li&gt;Locks are a little more legible—they’re taller and narrower.&lt;/li&gt;
-  &lt;li&gt;Laptops now have a half pixel gap between their base and screen, making them look a little sleeker.&lt;/li&gt;
-  &lt;li&gt;Shields are 1px taller now, with their inner icons now raised 1px as well. No reason to make them not take up the full viewBox.&lt;/li&gt;
-  &lt;li&gt;Stopwatch icons look more like actual stopwatches with separate start/stop and lap buttons.&lt;/li&gt;
-  &lt;li&gt;The bricks icon has its missing grout line restored.&lt;/li&gt;
-  &lt;li&gt;Renamed patch fill icons to fix typos in their file names (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fll&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fill&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Locks are a little more legible—they’re taller and narrower.&lt;/li&gt;
+&lt;li&gt;Laptops now have a half pixel gap between their base and screen, making them look a little sleeker.&lt;/li&gt;
+&lt;li&gt;Shields are 1px taller now, with their inner icons now raised 1px as well. No reason to make them not take up the full viewBox.&lt;/li&gt;
+&lt;li&gt;Stopwatch icons look more like actual stopwatches with separate start/stop and lap buttons.&lt;/li&gt;
+&lt;li&gt;The bricks icon has its missing grout line restored.&lt;/li&gt;
+&lt;li&gt;Renamed patch fill icons to fix typos in their file names (&lt;code&gt;fll&lt;/code&gt; to &lt;code&gt;fill&lt;/code&gt;).&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;Have some other refinements we should consider? Open an issue to tell us about it.&lt;/p&gt;
-
-&lt;p&gt;Last but not least, we ironed out some docs issues. Our navbar is fully functional and inline with the v5 beta site. We also added &lt;a href=&quot;https://github.com/twbs/icons/pull/561&quot;&gt;new aliases&lt;/a&gt; for icon filtering on homepage.&lt;/p&gt;
-
-&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;
-
+&lt;p&gt;Last but not least, we ironed out some docs issues. Our navbar is fully functional and inline with the v5 beta site. We also added &lt;a href=&#34;https://github.com/twbs/icons/pull/561&#34;&gt;new aliases&lt;/a&gt; for icon filtering on homepage.&lt;/p&gt;
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
 &lt;p&gt;To get started, install via npm:&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap-icons
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can also &lt;a href=&quot;https://github.com/twbs/icons/releases/tag/v1.2.2&quot;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&quot;https://github.com/twbs/icons/releases/download/v1.2.2/bootstrap-icons-1.2.2.zip&quot;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
-
-&lt;h2 id=&quot;figma&quot;&gt;Figma&lt;/h2&gt;
-
-&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&quot;https://www.figma.com/file/0fjzjlmwMsHJ0Mgj51j444/Bootstrap-Icons-v1.2.2?node-id=0%3A1&quot;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">We’re ironing out the kinks in our new font files with Bootstrap Icons v1.2.2! We went back to the Figma file and ironed out all the fill-rule details to ensure our SVGs translated into font files properly.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap Icons v1.2.1</title><link href="https://blog.getbootstrap.com/2020/12/12/bootstrap-icons-1-2-1/" rel="alternate" type="text/html" title="Bootstrap Icons v1.2.1" /><published>2020-12-12T21:30:00+00:00</published><updated>2020-12-12T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2020/12/12/bootstrap-icons-1-2-1</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/12/12/bootstrap-icons-1-2-1/">&lt;p&gt;Just a quick release to fix a typo in our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package.json&lt;/code&gt; for including the font files in our published package.&lt;/p&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;npm i bootstrap-icons
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.2.2&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.2.2/bootstrap-icons-1.2.2.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
+&lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
+&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&#34;https://www.figma.com/file/0fjzjlmwMsHJ0Mgj51j444/Bootstrap-Icons-v1.2.2?node-id=0%3A1&#34;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bootstrap Icons v1.2.1</title>
+      <link>https://blog.getbootstrap.com/2020/12/12/bootstrap-icons-1-2-1/</link>
+      <pubDate>Sat, 12 Dec 2020 21:30:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2020/12/12/bootstrap-icons-1-2-1/</guid>
+      <description>&lt;p&gt;Just a quick release to fix a typo in our &lt;code&gt;package.json&lt;/code&gt; for including the font files in our published package.&lt;/p&gt;
 &lt;p&gt;Get it via npm:&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap-icons
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can also &lt;a href=&quot;https://github.com/twbs/icons/releases/tag/v1.2.1&quot;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&quot;https://github.com/twbs/icons/releases/download/v1.2.1/bootstrap-icons-1.2.1.zip&quot;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Just a quick release to fix a typo in our package.json for including the font files in our published package.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap Icons v1.2.0</title><link href="https://blog.getbootstrap.com/2020/12/11/bootstrap-icons-1-2-0/" rel="alternate" type="text/html" title="Bootstrap Icons v1.2.0" /><published>2020-12-11T21:30:00+00:00</published><updated>2020-12-11T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2020/12/11/bootstrap-icons-1-2-0</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/12/11/bootstrap-icons-1-2-0/">&lt;p&gt;Our latest Bootstrap Icons release includes dozens of new icons, redesigned documentation, and the most highly requested new feature—icon fonts!&lt;/p&gt;
-
-&lt;h2 id=&quot;new-social-icons&quot;&gt;New social icons&lt;/h2&gt;
-
-&lt;p&gt;We’re starting slow with social icons—just a handful of the biggest sites and networks folks are likely to need. We’ll keep this list purposefully small as the intent isn’t for full coverage. We’ll aim to add a few over time, but this should suffice for the time being!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/12/icons-social.png&quot; alt=&quot;Social icons&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;new-media-icons&quot;&gt;New media icons&lt;/h2&gt;
-
-&lt;p&gt;The other main addition is our extended suite of media icons. We had folks ask for more options when it came to media controls, as well as different media types, so we’re getting the ball rolling with this update.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/12/icons-media.png&quot; alt=&quot;Media icons&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;icon-fonts&quot;&gt;Icon fonts!&lt;/h2&gt;
-
-&lt;p&gt;Finally, they’re here! We’re now generating web fonts for our icons thanks to a wonderful project, &lt;a href=&quot;https://github.com/tancredi/fantasticon&quot;&gt;Fantasticon&lt;/a&gt;. To start, we’re generating two web font formats—&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.woff&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.woff2&lt;/code&gt;. We’re also including an HTML index of all icons in web font format, powered by a generated CSS file.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/12/icons-font-index.png&quot; alt=&quot;Web fonts index&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is our first foray into icon fonts, and we’re likely to make some tweaks along the way. Help us iron out any kinks by testing the fonts yourself and sharing any feedback in an issue.&lt;/p&gt;
-
-&lt;h2 id=&quot;refreshed-docs&quot;&gt;Refreshed docs&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://icons.getbootstrap.com&quot;&gt;&lt;img src=&quot;/assets/img/2020/12/icons-docs-homepage.png&quot; alt=&quot;New Icons homepage&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&quot;https://icons.getbootstrap.com&quot;&gt;homepage for Bootstrap Icons&lt;/a&gt; has a new look thanks to an updated hero. The new hero features a new colorful icon image, clearer project description, and an upfront &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm i&lt;/code&gt; snippet to help folks get started faster. A new notice at the top links to the blog post to tell folks what’s new, too.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://icons.getbootstrap.com/icons/disc&quot;&gt;&lt;img src=&quot;/assets/img/2020/12/icons-docs-permalink.png&quot; alt=&quot;New Icons permalink&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://icons.getbootstrap.com/icons/disc&quot;&gt;Individual icon permalink pages&lt;/a&gt; have also been refreshed and greatly simplified. We’ve reduced the main example down to one instance of the icon, and expanded the examples below it to include the icon in more Bootstrap components.&lt;/p&gt;
-
-&lt;p&gt;The new permalink sidebar also features new and improved access to the icons. Need just an SVG or two? Use the new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Download SVG&lt;/code&gt; button. Looking for the HTML for the new icon fonts? Just copy-paste. And as always, want the raw SVG HTML? That’s still there, too.&lt;/p&gt;
-
-&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;npm i bootstrap-icons
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.2.1&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.2.1/bootstrap-icons-1.2.1.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bootstrap Icons v1.2.0</title>
+      <link>https://blog.getbootstrap.com/2020/12/11/bootstrap-icons-1-2-0/</link>
+      <pubDate>Fri, 11 Dec 2020 21:30:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2020/12/11/bootstrap-icons-1-2-0/</guid>
+      <description>&lt;p&gt;Our latest Bootstrap Icons release includes dozens of new icons, redesigned documentation, and the most highly requested new feature—icon fonts!&lt;/p&gt;
+&lt;h2 id=&#34;new-social-icons&#34;&gt;New social icons&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;re starting slow with social icons—just a handful of the biggest sites and networks folks are likely to need. We&amp;rsquo;ll keep this list purposefully small as the intent isn&amp;rsquo;t for full coverage. We&amp;rsquo;ll aim to add a few over time, but this should suffice for the time being!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/12/icons-social.png&#34; alt=&#34;Social icons&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;new-media-icons&#34;&gt;New media icons&lt;/h2&gt;
+&lt;p&gt;The other main addition is our extended suite of media icons. We had folks ask for more options when it came to media controls, as well as different media types, so we&amp;rsquo;re getting the ball rolling with this update.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/12/icons-media.png&#34; alt=&#34;Media icons&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;icon-fonts&#34;&gt;Icon fonts!&lt;/h2&gt;
+&lt;p&gt;Finally, they&amp;rsquo;re here! We&amp;rsquo;re now generating web fonts for our icons thanks to a wonderful project, &lt;a href=&#34;https://github.com/tancredi/fantasticon&#34;&gt;Fantasticon&lt;/a&gt;. To start, we&amp;rsquo;re generating two web font formats—&lt;code&gt;.woff&lt;/code&gt; and &lt;code&gt;.woff2&lt;/code&gt;. We&amp;rsquo;re also including an HTML index of all icons in web font format, powered by a generated CSS file.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/12/icons-font-index.png&#34; alt=&#34;Web fonts index&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is our first foray into icon fonts, and we&amp;rsquo;re likely to make some tweaks along the way. Help us iron out any kinks by testing the fonts yourself and sharing any feedback in an issue.&lt;/p&gt;
+&lt;h2 id=&#34;refreshed-docs&#34;&gt;Refreshed docs&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://icons.getbootstrap.com&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/12/icons-docs-homepage.png&#34; alt=&#34;New Icons homepage&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://icons.getbootstrap.com&#34;&gt;homepage for Bootstrap Icons&lt;/a&gt; has a new look thanks to an updated hero. The new hero features a new colorful icon image, clearer project description, and an upfront &lt;code&gt;npm i&lt;/code&gt; snippet to help folks get started faster. A new notice at the top links to the blog post to tell folks what&amp;rsquo;s new, too.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://icons.getbootstrap.com/icons/disc&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/12/icons-docs-permalink.png&#34; alt=&#34;New Icons permalink&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://icons.getbootstrap.com/icons/disc&#34;&gt;Individual icon permalink pages&lt;/a&gt; have also been refreshed and greatly simplified. We&amp;rsquo;ve reduced the main example down to one instance of the icon, and expanded the examples below it to include the icon in more Bootstrap components.&lt;/p&gt;
+&lt;p&gt;The new permalink sidebar also features new and improved access to the icons. Need just an SVG or two? Use the new &lt;code&gt;Download SVG&lt;/code&gt; button. Looking for the HTML for the new icon fonts? Just copy-paste. And as always, want the raw SVG HTML? That&amp;rsquo;s still there, too.&lt;/p&gt;
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
 &lt;p&gt;To get started, install via npm:&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap-icons
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can also &lt;a href=&quot;https://github.com/twbs/icons/releases/tag/v1.2.0&quot;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&quot;https://github.com/twbs/icons/releases/download/v1.2.0/bootstrap-icons-1.2.0.zip&quot;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
-
-&lt;h2 id=&quot;figma&quot;&gt;Figma&lt;/h2&gt;
-
-&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&quot;https://www.figma.com/file/JeBqM2fRcfIe7wMDgNZG6d/Bootstrap-Icons-v1.2.0?node-id=0%3A1&quot;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Our latest Bootstrap Icons release includes dozens of new icons, redesigned documentation, and the most highly requested new feature—icon fonts!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap 5 Beta 1</title><link href="https://blog.getbootstrap.com/2020/12/07/bootstrap-5-beta-1/" rel="alternate" type="text/html" title="Bootstrap 5 Beta 1" /><published>2020-12-07T11:00:00+00:00</published><updated>2020-12-07T11:00:00+00:00</updated><id>https://blog.getbootstrap.com/2020/12/07/bootstrap-5-beta-1</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/12/07/bootstrap-5-beta-1/">&lt;p&gt;With our first beta release of Bootstrap 5, we’re calling it on new features and breaking changes. From here on out, we’re only fine-tuning features, bugs, and documentation on our way to a stable v5 release. Woohoo!&lt;/p&gt;
-
-&lt;p&gt;Just like with the v4 development process, our docs for v5 have been temporarily hosted on a subdomain for the next major release. Starting today, those docs are being moved to the main domain and our old &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v5.getbootstrap.com&lt;/code&gt; domain will redirect.&lt;/p&gt;
-
-&lt;p&gt;There are some really awesome new features—RTL!—that have been added in this release, and they’ve come with some important changes. Keep reading for the lowdown and let us know what you think!&lt;/p&gt;
-
-&lt;h2 id=&quot;rtl&quot;&gt;RTL&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.0/getting-started/rtl/&quot;&gt;&lt;img src=&quot;/assets/img/2020/12/rtl-docs.png&quot; alt=&quot;Bootstrap RTL docs&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Our biggest addition to the project in years, we’ve finally added RTL support to Bootstrap! Please join me in giving @ffoodd—one of our newest contributors and author of the RTL pull request—a massive thank you. &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/30980&quot;&gt;The pull request&lt;/a&gt; includes nearly 50 references to existing issues and PRs that have tried to implement the feature into our core.&lt;/p&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;npm i bootstrap-icons
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.2.0&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.2.0/bootstrap-icons-1.2.0.zip&#34;&gt;download just the SVGs and fonts&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
+&lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
+&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&#34;https://www.figma.com/file/JeBqM2fRcfIe7wMDgNZG6d/Bootstrap-Icons-v1.2.0?node-id=0%3A1&#34;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bootstrap 5 Beta 1</title>
+      <link>https://blog.getbootstrap.com/2020/12/07/bootstrap-5-beta-1/</link>
+      <pubDate>Mon, 07 Dec 2020 11:00:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2020/12/07/bootstrap-5-beta-1/</guid>
+      <description>&lt;p&gt;With our first beta release of Bootstrap 5, we&amp;rsquo;re calling it on new features and breaking changes. From here on out, we&amp;rsquo;re only fine-tuning features, bugs, and documentation on our way to a stable v5 release. Woohoo!&lt;/p&gt;
+&lt;p&gt;Just like with the v4 development process, our docs for v5 have been temporarily hosted on a subdomain for the next major release. Starting today, those docs are being moved to the main domain and our old &lt;code&gt;v5.getbootstrap.com&lt;/code&gt; domain will redirect.&lt;/p&gt;
+&lt;p&gt;There are some really awesome new features—RTL!—that have been added in this release, and they&amp;rsquo;ve come with some important changes. Keep reading for the lowdown and let us know what you think!&lt;/p&gt;
+&lt;h2 id=&#34;rtl&#34;&gt;RTL&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/getting-started/rtl/&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/12/rtl-docs.png&#34; alt=&#34;Bootstrap RTL docs&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Our biggest addition to the project in years, we&amp;rsquo;ve finally added RTL support to Bootstrap! Please join me in giving @ffoodd—one of our newest contributors and author of the RTL pull request—a massive thank you. &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/30980&#34;&gt;The pull request&lt;/a&gt; includes nearly 50 references to existing issues and PRs that have tried to implement the feature into our core.&lt;/p&gt;
 &lt;p&gt;At a high level, our RTL approach includes a handful of changes:&lt;/p&gt;
-
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;New RTL versions of our CSS dist file&lt;/strong&gt;, which includes our grid, Reboot, utilities, and standard bundles. &lt;a href=&quot;https://getbootstrap.com/docs/5.0/getting-started/contents/&quot;&gt;See the Contents page for a full list of files.&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.0/getting-started/rtl/&quot;&gt;New RTL documentation&lt;/a&gt;&lt;/strong&gt; to help you get started.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.0/examples/#rtl&quot;&gt;Five new RTL Examples&lt;/a&gt;&lt;/strong&gt; that show our new RTL CSS in action, converting our Album, Checkout, Carousel, Blog, and Dashboard examples into all new right-to-left equivalents.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Two new cheatsheet kitchen sink pages&lt;/strong&gt;—the &lt;a href=&quot;https://getbootstrap.com/docs/5.0/examples/cheatsheet/&quot;&gt;default cheatsheet&lt;/a&gt; for our standard CSS and the &lt;a href=&quot;https://getbootstrap.com/docs/5.0/examples/cheatsheet-rtl/&quot;&gt;RTL cheatsheet&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;New RTL versions of our CSS dist file&lt;/strong&gt;, which includes our grid, Reboot, utilities, and standard bundles. &lt;a href=&#34;https://getbootstrap.com/docs/5.0/getting-started/contents/&#34;&gt;See the Contents page for a full list of files.&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/getting-started/rtl/&#34;&gt;New RTL documentation&lt;/a&gt;&lt;/strong&gt; to help you get started.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/examples/#rtl&#34;&gt;Five new RTL Examples&lt;/a&gt;&lt;/strong&gt; that show our new RTL CSS in action, converting our Album, Checkout, Carousel, Blog, and Dashboard examples into all new right-to-left equivalents.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Two new cheatsheet kitchen sink pages&lt;/strong&gt;—the &lt;a href=&#34;https://getbootstrap.com/docs/5.0/examples/cheatsheet/&#34;&gt;default cheatsheet&lt;/a&gt; for our standard CSS and the &lt;a href=&#34;https://getbootstrap.com/docs/5.0/examples/cheatsheet-rtl/&#34;&gt;RTL cheatsheet&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;Our approach is built on &lt;a href=&quot;https://rtlcss.com/&quot;&gt;RTLCSS&lt;/a&gt;, an awesome project that helps reprocess an existing LTR stylesheet for RTL. We’ve classified it as an experimental feature for now, anticipating that we’ll get some of this wrong. We’re looking to the community to help us round out the feature as we wrap up some remaining todos.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/issues/32330&quot;&gt;This issue&lt;/a&gt; has some outstanding todos already planned for our team to address. See something else we can improve? Please consider opening an issue or pull request.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://getbootstrap.com/docs/5.0/getting-started/rtl/&quot;&gt;Read up on RTL in Bootstrap in our docs&lt;/a&gt;, including required HTML changes, a starter template, details on our approach, and more.&lt;/p&gt;
-
-&lt;h2 id=&quot;renamed-classes-for-logical-properties&quot;&gt;Renamed classes for logical properties&lt;/h2&gt;
-
-&lt;p&gt;Part of our approach to adding RTL to Bootstrap was to add it in a way that felt future-friendly to ourselves and the web at large. As such, we’ve embraced the spirit of CSS logical properties and &lt;strong&gt;have renamed several classes and variables&lt;/strong&gt;. It’s a risky change because of the size and impact of the change, but we hope you’ll appreciate it overall!&lt;/p&gt;
-
-&lt;p&gt;Most of you have already interacted with logical properties thanks to our flex utilities—they replace direction properties like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;left&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;right&lt;/code&gt; in favor &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;start&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;end&lt;/code&gt;. Things like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;align-items-end&lt;/code&gt; have been welcomed additions. This makes horizontal directional class names appropriate for LTR and RTL without any additional overhead moving forward.&lt;/p&gt;
-
-&lt;p&gt;For example, in a LTR context, instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.ml-3&lt;/code&gt; for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;margin-left&lt;/code&gt;, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.ms-3&lt;/code&gt;. Be sure to &lt;a href=&quot;https://getbootstrap.com/docs/5.0/migration/#rtl&quot;&gt;read the RTL Migration guide&lt;/a&gt; for a full list of renamed classes and variables.&lt;/p&gt;
-
-&lt;h2 id=&quot;popperjs-v2&quot;&gt;Popper.js v2&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/12/popper-header.png&quot; alt=&quot;Popper.js&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We’ve upgraded &lt;a href=&quot;https://popper.js.org&quot;&gt;Popper.js&lt;/a&gt; from v1.x to v2.x, bringing with it some small breaking changes to our tooltips and popovers. These two changes are why we haven’t been able to update to v2.x sooner.&lt;/p&gt;
-
+&lt;p&gt;Our approach is built on &lt;a href=&#34;https://rtlcss.com/&#34;&gt;RTLCSS&lt;/a&gt;, an awesome project that helps reprocess an existing LTR stylesheet for RTL. We&amp;rsquo;ve classified it as an experimental feature for now, anticipating that we&amp;rsquo;ll get some of this wrong. We&amp;rsquo;re looking to the community to help us round out the feature as we wrap up some remaining todos.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/issues/32330&#34;&gt;This issue&lt;/a&gt; has some outstanding todos already planned for our team to address. See something else we can improve? Please consider opening an issue or pull request.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.0/getting-started/rtl/&#34;&gt;Read up on RTL in Bootstrap in our docs&lt;/a&gt;, including required HTML changes, a starter template, details on our approach, and more.&lt;/p&gt;
+&lt;h2 id=&#34;renamed-classes-for-logical-properties&#34;&gt;Renamed classes for logical properties&lt;/h2&gt;
+&lt;p&gt;Part of our approach to adding RTL to Bootstrap was to add it in a way that felt future-friendly to ourselves and the web at large. As such, we&amp;rsquo;ve embraced the spirit of CSS logical properties and &lt;strong&gt;have renamed several classes and variables&lt;/strong&gt;. It&amp;rsquo;s a risky change because of the size and impact of the change, but we hope you&amp;rsquo;ll appreciate it overall!&lt;/p&gt;
+&lt;p&gt;Most of you have already interacted with logical properties thanks to our flex utilities—they replace direction properties like &lt;code&gt;left&lt;/code&gt; and &lt;code&gt;right&lt;/code&gt; in favor &lt;code&gt;start&lt;/code&gt; and &lt;code&gt;end&lt;/code&gt;. Things like &lt;code&gt;align-items-end&lt;/code&gt; have been welcomed additions. This makes horizontal directional class names appropriate for LTR and RTL without any additional overhead moving forward.&lt;/p&gt;
+&lt;p&gt;For example, in a LTR context, instead of &lt;code&gt;.ml-3&lt;/code&gt; for &lt;code&gt;margin-left&lt;/code&gt;, use &lt;code&gt;.ms-3&lt;/code&gt;. Be sure to &lt;a href=&#34;https://getbootstrap.com/docs/5.0/migration/#rtl&#34;&gt;read the RTL Migration guide&lt;/a&gt; for a full list of renamed classes and variables.&lt;/p&gt;
+&lt;h2 id=&#34;popperjs-v2&#34;&gt;Popper.js v2&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/12/popper-header.png&#34; alt=&#34;Popper.js&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve upgraded &lt;a href=&#34;https://popper.js.org&#34;&gt;Popper.js&lt;/a&gt; from v1.x to v2.x, bringing with it some small breaking changes to our tooltips and popovers. These two changes are why we haven&amp;rsquo;t been able to update to v2.x sooner.&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Removed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;offset&lt;/code&gt; option from our Tooltip/Popover and Dropdown plugins; this can still be achieved using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;popperConfig&lt;/code&gt; parameter.&lt;/li&gt;
-  &lt;li&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fallbackPlacement&lt;/code&gt; option has become &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fallbackPlacements&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;offset&lt;/code&gt; option from our Tooltip/Popover and Dropdown plugins; this can still be achieved using the &lt;code&gt;popperConfig&lt;/code&gt; parameter.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;fallbackPlacement&lt;/code&gt; option has become &lt;code&gt;fallbackPlacements&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;Popper.js v2 also comes with a smaller file size for our primary dependency, updated positioning calculations, and much more. Beyond that, our tooltips and popovers are unchanged and just as powerful.&lt;/p&gt;
-
-&lt;h2 id=&quot;namespaced-data-attributes&quot;&gt;Namespaced data attributes&lt;/h2&gt;
-
-&lt;p&gt;We’ve renamed all our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data&lt;/code&gt; attributes to include &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bs&lt;/code&gt; as an infix, thereby namespacing all the HTML attributes that enable JavaScript behaviors from our plugins. &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31827&quot;&gt;See #31827&lt;/a&gt; for details. It helps keep Bootstrap-required JavaScript triggers clearly identified throughout your projects.&lt;/p&gt;
-
-&lt;p&gt;Making this change is a tad annoying, but easy enough to remedy with a find and replace. The new attributes work just like the old ones, just a little more specific. For example, here’s a dropdown button and menu with the newly renamed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data-bs-toggle&lt;/code&gt; attribute.&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dropdown&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-secondary dropdown-toggle&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dropdownMenuButton&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-bs-toggle=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dropdown&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-expanded=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;false&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;h2 id=&#34;namespaced-data-attributes&#34;&gt;Namespaced data attributes&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;ve renamed all our &lt;code&gt;data&lt;/code&gt; attributes to include &lt;code&gt;bs&lt;/code&gt; as an infix, thereby namespacing all the HTML attributes that enable JavaScript behaviors from our plugins. &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31827&#34;&gt;See #31827&lt;/a&gt; for details. It helps keep Bootstrap-required JavaScript triggers clearly identified throughout your projects.&lt;/p&gt;
+&lt;p&gt;Making this change is a tad annoying, but easy enough to remedy with a find and replace. The new attributes work just like the old ones, just a little more specific. For example, here&amp;rsquo;s a dropdown button and menu with the newly renamed &lt;code&gt;data-bs-toggle&lt;/code&gt; attribute.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;dropdown&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;button&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;btn btn-secondary dropdown-toggle&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;button&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;dropdownMenuButton&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;data-bs-toggle&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;dropdown&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;aria-expanded&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;false&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
     Dropdown button
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dropdown-menu&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-labelledby=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dropdownMenuButton&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dropdown-item&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Action&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dropdown-item&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Another action&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dropdown-item&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Something else here&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;new-toast-positioning&quot;&gt;New toast positioning&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/12/toast-position-docs.png&quot; alt=&quot;Popper.js&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;After dabbling in some JavaScript solutions to &lt;a href=&quot;https://getbootstrap.com/docs/5.0/components/toasts/#placement&quot;&gt;positioning toasts&lt;/a&gt;, we’ve landed on a new CSS-only approach thanks to our &lt;a href=&quot;https://getbootstrap.com/docs/5.0/utilities/position/&quot;&gt;new positioning utilities&lt;/a&gt;. This comes with some minor breaking changes—namely some changes to exact CSS properties and how we toggle visibility of the toasts—but largely keeps them intact.&lt;/p&gt;
-
-&lt;p&gt;Our docs have been updated to include a &lt;a href=&quot;https://getbootstrap.com/docs/5.0/components/toasts/#placement&quot;&gt;new position preview picker&lt;/a&gt;, too, so you can see them in action. &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32280/&quot;&gt;See the pull request for more details.&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;js-enhancements&quot;&gt;JS enhancements&lt;/h2&gt;
-
-&lt;p&gt;Beyond the namespacing, we’ve been chipping away at a few other JavaScript improvements and bug fixes. Here’s a rundown of what’s new:&lt;/p&gt;
-
+  &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;button&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ul&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;dropdown-menu&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;aria-labelledby&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;dropdownMenuButton&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;dropdown-item&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Action&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;dropdown-item&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Another action&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;dropdown-item&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Something else here&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ul&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;new-toast-positioning&#34;&gt;New toast positioning&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/12/toast-position-docs.png&#34; alt=&#34;Popper.js&#34;&gt;&lt;/p&gt;
+&lt;p&gt;After dabbling in some JavaScript solutions to &lt;a href=&#34;https://getbootstrap.com/docs/5.0/components/toasts/#placement&#34;&gt;positioning toasts&lt;/a&gt;, we&amp;rsquo;ve landed on a new CSS-only approach thanks to our &lt;a href=&#34;https://getbootstrap.com/docs/5.0/utilities/position/&#34;&gt;new positioning utilities&lt;/a&gt;. This comes with some minor breaking changes—namely some changes to exact CSS properties and how we toggle visibility of the toasts—but largely keeps them intact.&lt;/p&gt;
+&lt;p&gt;Our docs have been updated to include a &lt;a href=&#34;https://getbootstrap.com/docs/5.0/components/toasts/#placement&#34;&gt;new position preview picker&lt;/a&gt;, too, so you can see them in action. &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32280/&#34;&gt;See the pull request for more details.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;js-enhancements&#34;&gt;JS enhancements&lt;/h2&gt;
+&lt;p&gt;Beyond the namespacing, we&amp;rsquo;ve been chipping away at a few other JavaScript improvements and bug fixes. Here&amp;rsquo;s a rundown of what&amp;rsquo;s new:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Created a new base component to share logic across our components. &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/29370&quot;&gt;See #29370.&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Migrate to more modern APIs across our plugins. &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32095&quot;&gt;See #32095.&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Tooltips and popovers can now have custom classes. &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32217&quot;&gt;See #32217.&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Don’t hide modal when &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;config.keyboard&lt;/code&gt; is false. &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32179&quot;&gt;See #32179.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Created a new base component to share logic across our components. &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/29370&#34;&gt;See #29370.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Migrate to more modern APIs across our plugins. &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32095&#34;&gt;See #32095.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tooltips and popovers can now have custom classes. &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32217&#34;&gt;See #32217.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t hide modal when &lt;code&gt;config.keyboard&lt;/code&gt; is false. &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32179&#34;&gt;See #32179.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;More JavaScript updates are coming soon, from performance and file-size improvements to new features.&lt;/p&gt;
-
-&lt;h2 id=&quot;states-in-the-utilities-api&quot;&gt;States in the utilities API&lt;/h2&gt;
-
-&lt;p&gt;One of the biggest new features of Bootstrap 5 is our utilities API, an extensible way to customize, add, or remove Bootstrap utilities. We’ve been iterating along the way and our newest improvement is the ability to add pseudo-class variants with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;state&lt;/code&gt; option.&lt;/p&gt;
-
-&lt;p&gt;Use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;state&lt;/code&gt; option to generate pseudo-class variations. Example pseudo-classes are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:hover&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:focus&lt;/code&gt;. When a list of states are provided, classnames are created for that pseudo-class. For example, to change opacity on hover, add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;state: hover&lt;/code&gt; and you’ll get &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.opacity-hover:hover&lt;/code&gt; in your compiled CSS.&lt;/p&gt;
-
-&lt;p&gt;Need multiple pseudo-classes? Use a space-separated list: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;state: hover focus&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$utilities&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-  &lt;span class=&quot;s2&quot;&gt;&quot;opacity&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;property&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hover&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-      &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;m&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;.25&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;m&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;m&quot;&gt;75&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;.75&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Which outputs to:&lt;/p&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.opacity-0-hover&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.opacity-25-hover&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;.25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.opacity-50-hover&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.opacity-75-hover&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;.75&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.opacity-100-hover&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31643&quot;&gt;See #31643&lt;/a&gt; for more context on the change.&lt;/p&gt;
-
-&lt;h2 id=&quot;and-more&quot;&gt;And more…&lt;/h2&gt;
-
-&lt;p&gt;Elsewhere we’ve made a handful of other breaking changes and improvements. The most notable updates include:&lt;/p&gt;
-
+&lt;h2 id=&#34;states-in-the-utilities-api&#34;&gt;States in the utilities API&lt;/h2&gt;
+&lt;p&gt;One of the biggest new features of Bootstrap 5 is our utilities API, an extensible way to customize, add, or remove Bootstrap utilities. We&amp;rsquo;ve been iterating along the way and our newest improvement is the ability to add pseudo-class variants with the &lt;code&gt;state&lt;/code&gt; option.&lt;/p&gt;
+&lt;p&gt;Use the &lt;code&gt;state&lt;/code&gt; option to generate pseudo-class variations. Example pseudo-classes are &lt;code&gt;:hover&lt;/code&gt; and &lt;code&gt;:focus&lt;/code&gt;. When a list of states are provided, classnames are created for that pseudo-class. For example, to change opacity on hover, add &lt;code&gt;state: hover&lt;/code&gt; and you&amp;rsquo;ll get &lt;code&gt;.opacity-hover:hover&lt;/code&gt; in your compiled CSS.&lt;/p&gt;
+&lt;p&gt;Need multiple pseudo-classes? Use a space-separated list: &lt;code&gt;state: hover focus&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scss&#34; data-lang=&#34;scss&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$utilities&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+  &lt;span class=&#34;s2&#34;&gt;&amp;#34;opacity&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;property&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;no&#34;&gt;opacity&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;no&#34;&gt;opacity&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;hover&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+      &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+      &lt;span class=&#34;mi&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;.25&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+      &lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;.5&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+      &lt;span class=&#34;mi&#34;&gt;75&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;.75&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+      &lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+  &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Which outputs to:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;opacity-0-hover&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;hover&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;opacity&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;opacity-25-hover&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;hover&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;opacity&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;.25&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;opacity-50-hover&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;hover&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;opacity&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;.5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;opacity-75-hover&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;hover&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;opacity&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;.75&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;opacity-100-hover&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;hover&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;opacity&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31643&#34;&gt;See #31643&lt;/a&gt; for more context on the change.&lt;/p&gt;
+&lt;h2 id=&#34;and-more&#34;&gt;And more&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;Elsewhere we&amp;rsquo;ve made a handful of other breaking changes and improvements. The most notable updates include:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Breaking:&lt;/strong&gt; Renamed  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scale-color()&lt;/code&gt; function to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shift-color()&lt;/code&gt; . &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32149&quot;&gt;See #32149.&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Breaking:&lt;/strong&gt; Simplified the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;make-container()&lt;/code&gt; mixin and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$container-padding-x&lt;/code&gt;. &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31735&quot;&gt;See #31735.&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Fixed:&lt;/strong&gt; Corners remain rounded now in vertical button groups. &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31303&quot;&gt;See #31303.&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Fixed:&lt;/strong&gt; Removed default linear gradient on some table rows that caused undesirable performance. Still more work to do here FYI. &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32277&quot;&gt;See #32277.&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Updated:&lt;/strong&gt; Breadcrumbs now have a simplified appearance. Use utilities to restore the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;padding&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;background-color&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;border-radius&lt;/code&gt; as desired. &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32249&quot;&gt;See #32249.&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Updated:&lt;/strong&gt; Finalized browserslist configuration to match our supported browsers. &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/30986&quot;&gt;See #30986.&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking:&lt;/strong&gt; Renamed  &lt;code&gt;scale-color()&lt;/code&gt; function to &lt;code&gt;shift-color()&lt;/code&gt; . &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32149&#34;&gt;See #32149.&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking:&lt;/strong&gt; Simplified the &lt;code&gt;make-container()&lt;/code&gt; mixin and &lt;code&gt;$container-padding-x&lt;/code&gt;. &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31735&#34;&gt;See #31735.&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Fixed:&lt;/strong&gt; Corners remain rounded now in vertical button groups. &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31303&#34;&gt;See #31303.&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Fixed:&lt;/strong&gt; Removed default linear gradient on some table rows that caused undesirable performance. Still more work to do here FYI. &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32277&#34;&gt;See #32277.&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Updated:&lt;/strong&gt; Breadcrumbs now have a simplified appearance. Use utilities to restore the &lt;code&gt;padding&lt;/code&gt;, &lt;code&gt;background-color&lt;/code&gt;, and &lt;code&gt;border-radius&lt;/code&gt; as desired. &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32249&#34;&gt;See #32249.&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Updated:&lt;/strong&gt; Finalized browserslist configuration to match our supported browsers. &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/30986&#34;&gt;See #30986.&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;For a more complete list of of changes, checkout the &lt;a href=&quot;https://github.com/twbs/bootstrap/projects/26&quot;&gt;v5 Beta project board&lt;/a&gt; or &lt;a href=&quot;https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F26+&quot;&gt;list of issues and PRs&lt;/a&gt; in this &lt;a href=&quot;https://github.com/twbs/bootstrap/releases/tag/v5.0.0-beta1&quot;&gt;release&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;get-started&quot;&gt;Get started&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&quot;https://getbootstrap.com&quot;&gt;https://getbootstrap.com&lt;/a&gt; to explore the new release.&lt;/strong&gt; We’ve also published this updated as a pre-release to npm, so if you’re feeling bold or are curious about what’s new, you can pull the latest in that way.&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap@next
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;support-the-team&quot;&gt;Support the team&lt;/h2&gt;
-
-&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">With our first beta release of Bootstrap 5, we’re calling it on new features and breaking changes. From here on out, we’re only fine-tuning features, bugs, and documentation on our way to a stable v5 release. Woohoo!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap 5 Alpha 3</title><link href="https://blog.getbootstrap.com/2020/11/11/bootstrap-5-alpha-3/" rel="alternate" type="text/html" title="Bootstrap 5 Alpha 3" /><published>2020-11-11T11:00:00+00:00</published><updated>2020-11-11T11:00:00+00:00</updated><id>https://blog.getbootstrap.com/2020/11/11/bootstrap-5-alpha-3</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/11/11/bootstrap-5-alpha-3/">&lt;p&gt;Our third alpha release has landed with tons of updates to our components, utilities, docs, forms, JavaScript, and more. This is a larger alpha release for us and sets us up for our first beta where we’ll introduce some final breaking changes and features.&lt;/p&gt;
-
-&lt;p&gt;We’re trying to move fast and keep the future of the project and the web in general in mind, so this release is an important milestone for us. We’re balancing practical migration from v4 with meaningful changes that reflect the ever-changing front-end community.&lt;/p&gt;
-
-&lt;p&gt;We think you’ll love this release, so keep on reading and let us know what you think!&lt;/p&gt;
-
-&lt;h2 id=&quot;components&quot;&gt;Components&lt;/h2&gt;
-
-&lt;p&gt;We’ve improved a handful of components in this release, and even dropped one for some new and improved utilities.&lt;/p&gt;
-
-&lt;h3 id=&quot;new-accordion&quot;&gt;New accordion&lt;/h3&gt;
-
-&lt;p&gt;We’ve dropped the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.card&lt;/code&gt; based accordion for a brand new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.accordion&lt;/code&gt; component, solving several bugs in the process. Our new accordion still uses the Collapse JavaScript plugin, but with custom HTML and CSS to support it, it’s better and easier than ever to use.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/11/accordion.png&quot; alt=&quot;New Bootstrap accordion&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The new accordion includes Bootstrap Icons as chevron icons indicating state and click-ability. We’ve included support for a flush accordion (add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.accordion-flush&lt;/code&gt;) to remove the outer borders, allowing for easier placement inside parent elements.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/32013&quot;&gt;See the PR&lt;/a&gt; for extra details on what’s new, or &lt;a href=&quot;https://v5.getbootstrap.com/docs/5.0/components/accordion/&quot;&gt;visit the new docs page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;new-block-buttons&quot;&gt;New block buttons&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/11/block-buttons.png&quot; alt=&quot;New block buttons&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Block buttons are no more in v5—we’ve dropped the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.btn-block&lt;/code&gt; class for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.d-grid&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gap-*&lt;/code&gt; utilities. This allows for the same behavior and style, but with much greater control over spacing, alignment, and even responsive layout options.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://v5.getbootstrap.com/docs/5.0/components/buttons/#block-buttons&quot;&gt;See the buttons docs page for details.&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;docs-improvements&quot;&gt;Docs improvements&lt;/h2&gt;
-
-&lt;p&gt;We’re always looking for new ways to improve our documentation, and this release is no different. We have a ton of changes big and small.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/11/docs-search.png&quot; alt=&quot;Docs search&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We’ve added a keyboard shortcut to focus you on the search field. Hit &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;/&lt;/kbd&gt; to trigger it.&lt;/p&gt;
-
-&lt;p&gt;We’ve also rewritten the docs sidebar to use actual &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;button&amp;gt;&lt;/code&gt; elements instead of anchors, and improved the focus styling.&lt;/p&gt;
-
-&lt;p&gt;Content-wise, we’ve renamed the “Navs” page to “Navs &amp;amp; Tabs” to help folks find our tab JavaScript features better. We’ve also made some style changes, improving the focus styles of heading anchor links and removing text wrapping from code snippets for shorter and easier to read code.&lt;/p&gt;
-
-&lt;h2 id=&quot;sass&quot;&gt;Sass&lt;/h2&gt;
-
+&lt;p&gt;For a more complete list of of changes, checkout the &lt;a href=&#34;https://github.com/twbs/bootstrap/projects/26&#34;&gt;v5 Beta project board&lt;/a&gt; or &lt;a href=&#34;https://github.com/twbs/bootstrap/issues?q=is%3Aclosed+project%3Atwbs%2Fbootstrap%2F26+&#34;&gt;list of issues and PRs&lt;/a&gt; in this &lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.0.0-beta1&#34;&gt;release&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;get-started&#34;&gt;Get started&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://getbootstrap.com&#34;&gt;https://getbootstrap.com&lt;/a&gt; to explore the new release.&lt;/strong&gt; We&amp;rsquo;ve also published this updated as a pre-release to npm, so if you&amp;rsquo;re feeling bold or are curious about what&amp;rsquo;s new, you can pull the latest in that way.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;npm i bootstrap@next
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
+&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&#39; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bootstrap 5 Alpha 3</title>
+      <link>https://blog.getbootstrap.com/2020/11/11/bootstrap-5-alpha-3/</link>
+      <pubDate>Wed, 11 Nov 2020 11:00:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2020/11/11/bootstrap-5-alpha-3/</guid>
+      <description>&lt;p&gt;Our third alpha release has landed with tons of updates to our components, utilities, docs, forms, JavaScript, and more. This is a larger alpha release for us and sets us up for our first beta where we&amp;rsquo;ll introduce some final breaking changes and features.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re trying to move fast and keep the future of the project and the web in general in mind, so this release is an important milestone for us. We&amp;rsquo;re balancing practical migration from v4 with meaningful changes that reflect the ever-changing front-end community.&lt;/p&gt;
+&lt;p&gt;We think you&amp;rsquo;ll love this release, so keep on reading and let us know what you think!&lt;/p&gt;
+&lt;h2 id=&#34;components&#34;&gt;Components&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;ve improved a handful of components in this release, and even dropped one for some new and improved utilities.&lt;/p&gt;
+&lt;h3 id=&#34;new-accordion&#34;&gt;New accordion&lt;/h3&gt;
+&lt;p&gt;We&amp;rsquo;ve dropped the &lt;code&gt;.card&lt;/code&gt; based accordion for a brand new &lt;code&gt;.accordion&lt;/code&gt; component, solving several bugs in the process. Our new accordion still uses the Collapse JavaScript plugin, but with custom HTML and CSS to support it, it&amp;rsquo;s better and easier than ever to use.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/11/accordion.png&#34; alt=&#34;New Bootstrap accordion&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The new accordion includes Bootstrap Icons as chevron icons indicating state and click-ability. We&amp;rsquo;ve included support for a flush accordion (add &lt;code&gt;.accordion-flush&lt;/code&gt;) to remove the outer borders, allowing for easier placement inside parent elements.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/32013&#34;&gt;See the PR&lt;/a&gt; for extra details on what&amp;rsquo;s new, or &lt;a href=&#34;https://v5.getbootstrap.com/docs/5.0/components/accordion/&#34;&gt;visit the new docs page&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;new-block-buttons&#34;&gt;New block buttons&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/11/block-buttons.png&#34; alt=&#34;New block buttons&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Block buttons are no more in v5—we&amp;rsquo;ve dropped the &lt;code&gt;.btn-block&lt;/code&gt; class for &lt;code&gt;.d-grid&lt;/code&gt; and &lt;code&gt;.gap-*&lt;/code&gt; utilities. This allows for the same behavior and style, but with much greater control over spacing, alignment, and even responsive layout options.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://v5.getbootstrap.com/docs/5.0/components/buttons/#block-buttons&#34;&gt;See the buttons docs page for details.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;docs-improvements&#34;&gt;Docs improvements&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;re always looking for new ways to improve our documentation, and this release is no different. We have a ton of changes big and small.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/11/docs-search.png&#34; alt=&#34;Docs search&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve added a keyboard shortcut to focus you on the search field. Hit &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;/&lt;/kbd&gt; to trigger it.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve also rewritten the docs sidebar to use actual &lt;code&gt;&amp;lt;button&amp;gt;&lt;/code&gt; elements instead of anchors, and improved the focus styling.&lt;/p&gt;
+&lt;p&gt;Content-wise, we&amp;rsquo;ve renamed the &amp;ldquo;Navs&amp;rdquo; page to &amp;ldquo;Navs &amp;amp; Tabs&amp;rdquo; to help folks find our tab JavaScript features better. We&amp;rsquo;ve also made some style changes, improving the focus styles of heading anchor links and removing text wrapping from code snippets for shorter and easier to read code.&lt;/p&gt;
+&lt;h2 id=&#34;sass&#34;&gt;Sass&lt;/h2&gt;
 &lt;p&gt;Three important and helpful changes to our Sass source code:&lt;/p&gt;
-
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;We’ve switched to Dart Sass with LibSass being deprecated. We’ve been testing our builds with Dart Sass for a while and decided to make the switch with LibSass being deprecated just a couple of weeks ago. We’re holding on the Sass modules for now.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The color system which worked with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;color-level()&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$theme-color-interval&lt;/code&gt; was removed in favor of a new color system. All &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lighten()&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;darken()&lt;/code&gt; functions in our codebase are replaced by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tint-color()&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shade-color()&lt;/code&gt;. These functions will mix the color with either white or black instead of changing its lightness by a fixed amount. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scale-color()&lt;/code&gt; will either tint or shade a color depending on whether its weight parameter is positive or negative. &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/30622&quot;&gt;See #30622&lt;/a&gt; for more details.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;We’ve added a Sass variable for CSS custom property prefixes.&lt;/p&gt;
-  &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We&amp;rsquo;ve switched to Dart Sass with LibSass being deprecated. We&amp;rsquo;ve been testing our builds with Dart Sass for a while and decided to make the switch with LibSass being deprecated just a couple of weeks ago. We&amp;rsquo;re holding on the Sass modules for now.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The color system which worked with &lt;code&gt;color-level()&lt;/code&gt; and &lt;code&gt;$theme-color-interval&lt;/code&gt; was removed in favor of a new color system. All &lt;code&gt;lighten()&lt;/code&gt; and &lt;code&gt;darken()&lt;/code&gt; functions in our codebase are replaced by &lt;code&gt;tint-color()&lt;/code&gt; and &lt;code&gt;shade-color()&lt;/code&gt;. These functions will mix the color with either white or black instead of changing its lightness by a fixed amount. The &lt;code&gt;scale-color()&lt;/code&gt; will either tint or shade a color depending on whether its weight parameter is positive or negative. &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/30622&#34;&gt;See #30622&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We&amp;rsquo;ve added a Sass variable for CSS custom property prefixes.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h2 id=&quot;js&quot;&gt;JS&lt;/h2&gt;
-
-&lt;p&gt;Ahead of some larger and necessary JavaScript changes in Beta 1, we’ve shipped a few updates to our plugins.&lt;/p&gt;
-
+&lt;h2 id=&#34;js&#34;&gt;JS&lt;/h2&gt;
+&lt;p&gt;Ahead of some larger and necessary JavaScript changes in Beta 1, we&amp;rsquo;ve shipped a few updates to our plugins.&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Simplified dropdown’s placement&lt;/li&gt;
-  &lt;li&gt;Removed redundant polyfills since we dropped IE and Legacy Edge&lt;/li&gt;
-  &lt;li&gt;Fixed the carousel &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data-interval&lt;/code&gt; bug by checking for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data-interval&lt;/code&gt; on the first slide&lt;/li&gt;
-  &lt;li&gt;Removed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Manipulator.toggleClass&lt;/code&gt; to simplify some code since we only used it one place&lt;/li&gt;
+&lt;li&gt;Simplified dropdown&amp;rsquo;s placement&lt;/li&gt;
+&lt;li&gt;Removed redundant polyfills since we dropped IE and Legacy Edge&lt;/li&gt;
+&lt;li&gt;Fixed the carousel &lt;code&gt;data-interval&lt;/code&gt; bug by checking for &lt;code&gt;data-interval&lt;/code&gt; on the first slide&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;Manipulator.toggleClass&lt;/code&gt; to simplify some code since we only used it one place&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h2 id=&quot;utilities&quot;&gt;Utilities&lt;/h2&gt;
-
-&lt;p&gt;Utility classes are incredibly powerful in Bootstrap, especially with our new &lt;a href=&quot;https://v5.getbootstrap.com/docs/5.0/utilities/api/&quot;&gt;utilities API&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/11/utilities-api-docs.png&quot; alt=&quot;New utilities API docs&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;With our first beta, we’ve overhauled our API docs to provide clearer examples and information on adding, modifying, removing, and extending our default utilities.&lt;/p&gt;
-
-&lt;p&gt;In addition, we’ve added some new default utilities to make life a little easier:&lt;/p&gt;
-
+&lt;h2 id=&#34;utilities&#34;&gt;Utilities&lt;/h2&gt;
+&lt;p&gt;Utility classes are incredibly powerful in Bootstrap, especially with our new &lt;a href=&#34;https://v5.getbootstrap.com/docs/5.0/utilities/api/&#34;&gt;utilities API&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/11/utilities-api-docs.png&#34; alt=&#34;New utilities API docs&#34;&gt;&lt;/p&gt;
+&lt;p&gt;With our first beta, we&amp;rsquo;ve overhauled our API docs to provide clearer examples and information on adding, modifying, removing, and extending our default utilities.&lt;/p&gt;
+&lt;p&gt;In addition, we&amp;rsquo;ve added some new default utilities to make life a little easier:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Added &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.d-grid&lt;/code&gt; for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;display: grid&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Added &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.fs&lt;/code&gt; utilities for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;font-size&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Renamed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;font-weight&lt;/code&gt; utilities to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.fw&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Added &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.rounded-1&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.rounded-2&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.rounded-3&lt;/code&gt; for new small, medium, and large &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;border-radius&lt;/code&gt; utilities&lt;/li&gt;
-  &lt;li&gt;Added &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.overflow-visible&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.overflow-scroll&lt;/code&gt; utilities&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;.d-grid&lt;/code&gt; for &lt;code&gt;display: grid&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;.fs&lt;/code&gt; utilities for &lt;code&gt;font-size&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Renamed &lt;code&gt;font-weight&lt;/code&gt; utilities to &lt;code&gt;.fw&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;.rounded-1&lt;/code&gt;, &lt;code&gt;.rounded-2&lt;/code&gt;, and &lt;code&gt;.rounded-3&lt;/code&gt; for new small, medium, and large &lt;code&gt;border-radius&lt;/code&gt; utilities&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;.overflow-visible&lt;/code&gt; and &lt;code&gt;.overflow-scroll&lt;/code&gt; utilities&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;Our next release will also add another powerful feature to our utilities, pseudo-class support!&lt;/p&gt;
-
-&lt;h2 id=&quot;forms&quot;&gt;Forms&lt;/h2&gt;
-
+&lt;h2 id=&#34;forms&#34;&gt;Forms&lt;/h2&gt;
 &lt;p&gt;Forms have some exciting changes thanks to the addition of floating labels as a fully-fledged form layout option and a new file input.&lt;/p&gt;
-
-&lt;h3 id=&quot;floating-labels&quot;&gt;Floating labels&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/11/floating-forms.png&quot; alt=&quot;New floating labels&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://v5.getbootstrap.com/docs/5.0/forms/floating-labels/&quot;&gt;Floating labels&lt;/a&gt; include support for textual inputs, selects, and textareas. We have one limitation with textareas where multiple lines of text can be obscured by the floating label. We’re working on fixes for this, so if you have ideas, please let us know!&lt;/p&gt;
-
-&lt;h3 id=&quot;new-file-input&quot;&gt;New file input&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/11/file-input.png&quot; alt=&quot;New file input&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We’ve dropped our custom &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.form-file&lt;/code&gt; class for additional styles on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.form-control&lt;/code&gt; class. This means we no longer require additional JavaScript to make our file input styles functional—the &lt;a href=&quot;https://v5.getbootstrap.com/docs/5.0/forms/form-control/#file-input&quot;&gt;new form file&lt;/a&gt; is all CSS!&lt;/p&gt;
-
-&lt;h3 id=&quot;input-group-rounded-corners&quot;&gt;Input group rounded corners&lt;/h3&gt;
-
-&lt;p&gt;Beyond that, we’ve finally resolved ourselves to adding a new class to fix the rounded corners on input groups when using validation. Add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.has-feedback&lt;/code&gt; class to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.input-group&lt;/code&gt; to enable validation messages inside input groups without any visual regressions. The good news is this is also being &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31953&quot;&gt;backported to v4&lt;/a&gt; in our next release.&lt;/p&gt;
-
-&lt;h3 id=&quot;and-more&quot;&gt;And more&lt;/h3&gt;
-
-&lt;p&gt;In addition, we’ve made a few other form-related improvements:&lt;/p&gt;
-
+&lt;h3 id=&#34;floating-labels&#34;&gt;Floating labels&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/11/floating-forms.png&#34; alt=&#34;New floating labels&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://v5.getbootstrap.com/docs/5.0/forms/floating-labels/&#34;&gt;Floating labels&lt;/a&gt; include support for textual inputs, selects, and textareas. We have one limitation with textareas where multiple lines of text can be obscured by the floating label. We&amp;rsquo;re working on fixes for this, so if you have ideas, please let us know!&lt;/p&gt;
+&lt;h3 id=&#34;new-file-input&#34;&gt;New file input&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/11/file-input.png&#34; alt=&#34;New file input&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve dropped our custom &lt;code&gt;.form-file&lt;/code&gt; class for additional styles on the &lt;code&gt;.form-control&lt;/code&gt; class. This means we no longer require additional JavaScript to make our file input styles functional—the &lt;a href=&#34;https://v5.getbootstrap.com/docs/5.0/forms/form-control/#file-input&#34;&gt;new form file&lt;/a&gt; is all CSS!&lt;/p&gt;
+&lt;h3 id=&#34;input-group-rounded-corners&#34;&gt;Input group rounded corners&lt;/h3&gt;
+&lt;p&gt;Beyond that, we&amp;rsquo;ve finally resolved ourselves to adding a new class to fix the rounded corners on input groups when using validation. Add the &lt;code&gt;.has-feedback&lt;/code&gt; class to the &lt;code&gt;.input-group&lt;/code&gt; to enable validation messages inside input groups without any visual regressions. The good news is this is also being &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31953&#34;&gt;backported to v4&lt;/a&gt; in our next release.&lt;/p&gt;
+&lt;h3 id=&#34;and-more&#34;&gt;And more&lt;/h3&gt;
+&lt;p&gt;In addition, we&amp;rsquo;ve made a few other form-related improvements:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Removed explicit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;height&lt;/code&gt; from most of our form controls.&lt;/li&gt;
-  &lt;li&gt;Fixed the disabled checkbox toggle buttons&lt;/li&gt;
-  &lt;li&gt;Added docs examples for disabled &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.form-control&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.form-select&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.form-range&lt;/code&gt; elements&lt;/li&gt;
+&lt;li&gt;Removed explicit &lt;code&gt;height&lt;/code&gt; from most of our form controls.&lt;/li&gt;
+&lt;li&gt;Fixed the disabled checkbox toggle buttons&lt;/li&gt;
+&lt;li&gt;Added docs examples for disabled &lt;code&gt;.form-control&lt;/code&gt;, &lt;code&gt;.form-select&lt;/code&gt;, and &lt;code&gt;.form-range&lt;/code&gt; elements&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;Have some form feature requests or improvements we should consider? Please open an issue!&lt;/p&gt;
-
-&lt;h2 id=&quot;quality-of-life&quot;&gt;Quality of life&lt;/h2&gt;
-
-&lt;p&gt;Lastly, across the board we’ve made some minor updates to browser support, Reboot styling, components, and more&lt;/p&gt;
-
+&lt;h2 id=&#34;quality-of-life&#34;&gt;Quality of life&lt;/h2&gt;
+&lt;p&gt;Lastly, across the board we&amp;rsquo;ve made some minor updates to browser support, Reboot styling, components, and more&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Moved our preferred CDN from BootstrapCDN to jsDelivr&lt;/li&gt;
-  &lt;li&gt;Dropped support for Legacy Edge (woohoo!)&lt;/li&gt;
-  &lt;li&gt;Updated to Node.js 14 and PostCSS 8.x&lt;/li&gt;
-  &lt;li&gt;Removed obsolete prefixes in our CSS&lt;/li&gt;
-  &lt;li&gt;Added &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cursor: pointer&lt;/code&gt; and heights to color inputs&lt;/li&gt;
-  &lt;li&gt;Removed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;background-clip&lt;/code&gt; on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.btn-close&lt;/code&gt; so the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;background-image&lt;/code&gt; is no longer clipped&lt;/li&gt;
-  &lt;li&gt;Improved &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sans-serif&lt;/code&gt; font selection in Ubuntu&lt;/li&gt;
-  &lt;li&gt;Spinners now slow down when reduced motion is enabled rather than stopping outright&lt;/li&gt;
-  &lt;li&gt;Fix inconsistent whitespace in breadcrumbs&lt;/li&gt;
+&lt;li&gt;Moved our preferred CDN from BootstrapCDN to jsDelivr&lt;/li&gt;
+&lt;li&gt;Dropped support for Legacy Edge (woohoo!)&lt;/li&gt;
+&lt;li&gt;Updated to Node.js 14 and PostCSS 8.x&lt;/li&gt;
+&lt;li&gt;Removed obsolete prefixes in our CSS&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;cursor: pointer&lt;/code&gt; and heights to color inputs&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;background-clip&lt;/code&gt; on &lt;code&gt;.btn-close&lt;/code&gt; so the &lt;code&gt;background-image&lt;/code&gt; is no longer clipped&lt;/li&gt;
+&lt;li&gt;Improved &lt;code&gt;sans-serif&lt;/code&gt; font selection in Ubuntu&lt;/li&gt;
+&lt;li&gt;Spinners now slow down when reduced motion is enabled rather than stopping outright&lt;/li&gt;
+&lt;li&gt;Fix inconsistent whitespace in breadcrumbs&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;See all the changes in the &lt;a href=&quot;https://github.com/twbs/bootstrap/projects/22&quot;&gt;v5 Alpha 3 project board&lt;/a&gt; and &lt;a href=&quot;https://github.com/twbs/bootstrap/releases/tag/v5.0.0-alpha3&quot;&gt;v5 alpha 3 release changelog&lt;/a&gt;. Be sure to &lt;a href=&quot;https://v5.getbootstrap.com/docs/5.0/migration/&quot;&gt;read the Migration guide&lt;/a&gt; for details on what’s changed since Alpha 2.&lt;/p&gt;
-
-&lt;h2 id=&quot;coming-in-beta-1&quot;&gt;Coming in Beta 1&lt;/h2&gt;
-
-&lt;p&gt;Beta 1 will be a more narrowly focused release and we’re hoping to ship these final breaking changes as part of it.&lt;/p&gt;
-
+&lt;p&gt;See all the changes in the &lt;a href=&#34;https://github.com/twbs/bootstrap/projects/22&#34;&gt;v5 Alpha 3 project board&lt;/a&gt; and &lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.0.0-alpha3&#34;&gt;v5 alpha 3 release changelog&lt;/a&gt;. Be sure to &lt;a href=&#34;https://v5.getbootstrap.com/docs/5.0/migration/&#34;&gt;read the Migration guide&lt;/a&gt; for details on what&amp;rsquo;s changed since Alpha 2.&lt;/p&gt;
+&lt;h2 id=&#34;coming-in-beta-1&#34;&gt;Coming in Beta 1&lt;/h2&gt;
+&lt;p&gt;Beta 1 will be a more narrowly focused release and we&amp;rsquo;re hoping to ship these final breaking changes as part of it.&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;RTL!&lt;/strong&gt; &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/30980&quot;&gt;RTL is still coming!&lt;/a&gt; The PR is being reviewed by our team would like it to land in Beta 1 to ensure we can get some testing from the community.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Updating to Popper.js v2.&lt;/strong&gt; Still on our radar, but moving slower than we anticipated due to some of the differences in the major release. &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31178&quot;&gt;See the PR for details.&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Namespaced data attributes&lt;/strong&gt; to help keep our functionality clearly separated from your own. &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31827&quot;&gt;See the PR.&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Updated utilities API with pseudo-classes support via a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;state&lt;/code&gt; option.&lt;/strong&gt; Add any space-separated list of states to get additional utilities for that pseudo-class. &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31643&quot;&gt;See the work-in-progress PR for details.&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;RTL!&lt;/strong&gt; &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/30980&#34;&gt;RTL is still coming!&lt;/a&gt; The PR is being reviewed by our team would like it to land in Beta 1 to ensure we can get some testing from the community.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Updating to Popper.js v2.&lt;/strong&gt; Still on our radar, but moving slower than we anticipated due to some of the differences in the major release. &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31178&#34;&gt;See the PR for details.&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Namespaced data attributes&lt;/strong&gt; to help keep our functionality clearly separated from your own. &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31827&#34;&gt;See the PR.&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Updated utilities API with pseudo-classes support via a &lt;code&gt;state&lt;/code&gt; option.&lt;/strong&gt; Add any space-separated list of states to get additional utilities for that pseudo-class. &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31643&#34;&gt;See the work-in-progress PR for details.&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;For a more up to date list of changes, be sure to follow along with the &lt;a href=&quot;https://github.com/twbs/bootstrap/projects/26&quot;&gt;v5 Beta project board&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;get-started&quot;&gt;Get started&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&quot;https://v5.getbootstrap.com&quot;&gt;https://v5.getbootstrap.com&lt;/a&gt; to explore the new release.&lt;/strong&gt; We’ve also published this updated as a pre-release to npm, so if you’re feeling bold or are curious about what’s new, you can pull the latest in that way.&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap@next
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;support-the-team&quot;&gt;Support the team&lt;/h2&gt;
-
-&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Our third alpha release has landed with tons of updates to our components, utilities, docs, forms, JavaScript, and more. This is a larger alpha release for us and sets us up for our first beta where we’ll introduce some final breaking changes and features.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap Icons v1.1.0</title><link href="https://blog.getbootstrap.com/2020/10/28/bootstrap-icons-1-1-0/" rel="alternate" type="text/html" title="Bootstrap Icons v1.1.0" /><published>2020-10-28T21:30:00+00:00</published><updated>2020-10-28T21:30:00+00:00</updated><id>https://blog.getbootstrap.com/2020/10/28/bootstrap-icons-1-1-0</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/10/28/bootstrap-icons-1-1-0/">&lt;p&gt;Our first minor release for Bootstrap Icons is here, with over 30 new icons and a few bug fixes. New icons include fill variations for our emoji icons, including a few new emojis, and several new file type icons.&lt;/p&gt;
-
-&lt;h2 id=&quot;30-new-icons&quot;&gt;30+ new icons&lt;/h2&gt;
-
-&lt;p&gt;Here’s a look at our file and emoji icons as of v1.1.0. New in this release for emojis are the wink and heart eyes, along with fill versions for the full set. In addition, we’ve added icons for Word, Excel, PowerPoint, and a general bar chart file type.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/10/icons-emoji.png&quot; alt=&quot;Emoji icons&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/10/icons-files-folders.png&quot; alt=&quot;File and folder icons&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;changes&quot;&gt;Changes&lt;/h2&gt;
-
-&lt;p&gt;Here’s a more complete look at what’s changed in this release.&lt;/p&gt;
-
+&lt;p&gt;For a more up to date list of changes, be sure to follow along with the &lt;a href=&#34;https://github.com/twbs/bootstrap/projects/26&#34;&gt;v5 Beta project board&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;get-started&#34;&gt;Get started&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://v5.getbootstrap.com&#34;&gt;https://v5.getbootstrap.com&lt;/a&gt; to explore the new release.&lt;/strong&gt; We&amp;rsquo;ve also published this updated as a pre-release to npm, so if you&amp;rsquo;re feeling bold or are curious about what&amp;rsquo;s new, you can pull the latest in that way.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;npm i bootstrap@next
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
+&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&#39; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bootstrap Icons v1.1.0</title>
+      <link>https://blog.getbootstrap.com/2020/10/28/bootstrap-icons-1-1-0/</link>
+      <pubDate>Wed, 28 Oct 2020 21:30:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2020/10/28/bootstrap-icons-1-1-0/</guid>
+      <description>&lt;p&gt;Our first minor release for Bootstrap Icons is here, with over 30 new icons and a few bug fixes. New icons include fill variations for our emoji icons, including a few new emojis, and several new file type icons.&lt;/p&gt;
+&lt;h2 id=&#34;30-new-icons&#34;&gt;30+ new icons&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s a look at our file and emoji icons as of v1.1.0. New in this release for emojis are the wink and heart eyes, along with fill versions for the full set. In addition, we&amp;rsquo;ve added icons for Word, Excel, PowerPoint, and a general bar chart file type.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/10/icons-emoji.png&#34; alt=&#34;Emoji icons&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/10/icons-files-folders.png&#34; alt=&#34;File and folder icons&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s a more complete look at what&amp;rsquo;s changed in this release.&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Fixed &lt;a href=&quot;https://github.com/twbs/icons/issues/415&quot;&gt;#415&lt;/a&gt;: Properly name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;grip-horizontal&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;grip-vertical&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Fixed &lt;a href=&quot;https://github.com/twbs/icons/issues/423&quot;&gt;#423&lt;/a&gt;: Update &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;arrow-up-square-fill&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Fixed &lt;a href=&quot;https://github.com/twbs/icons/issues/437&quot;&gt;#437&lt;/a&gt;: Make &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;file-earmark&lt;/code&gt; variations consistent&lt;/li&gt;
-  &lt;li&gt;New: Added 18 filetype icons &lt;a href=&quot;https://github.com/twbs/icons/pull/465&quot;&gt;#465&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;New: Added 13 emoji icons &lt;a href=&quot;https://github.com/twbs/icons/pull/466&quot;&gt;#66&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fixed &lt;a href=&#34;https://github.com/twbs/icons/issues/415&#34;&gt;#415&lt;/a&gt;: Properly name &lt;code&gt;grip-horizontal&lt;/code&gt; and &lt;code&gt;grip-vertical&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fixed &lt;a href=&#34;https://github.com/twbs/icons/issues/423&#34;&gt;#423&lt;/a&gt;: Update &lt;code&gt;arrow-up-square-fill&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fixed &lt;a href=&#34;https://github.com/twbs/icons/issues/437&#34;&gt;#437&lt;/a&gt;: Make &lt;code&gt;file-earmark&lt;/code&gt; variations consistent&lt;/li&gt;
+&lt;li&gt;New: Added 18 filetype icons &lt;a href=&#34;https://github.com/twbs/icons/pull/465&#34;&gt;#465&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New: Added 13 emoji icons &lt;a href=&#34;https://github.com/twbs/icons/pull/466&#34;&gt;#66&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;
-
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
 &lt;p&gt;To get started, install via npm:&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap-icons
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can also &lt;a href=&quot;https://github.com/twbs/icons/releases/tag/v1.1.0&quot;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&quot;https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip&quot;&gt;download just the SVGs&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
-
-&lt;h2 id=&quot;figma&quot;&gt;Figma&lt;/h2&gt;
-
-&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&quot;https://www.figma.com/file/6jIgJymnRpMjGSMG2BKNRe/Bootstrap-Icons-v1.1.0?node-id=0%3A1&quot;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">Our first minor release for Bootstrap Icons is here, with over 30 new icons and a few bug fixes. New icons include fill variations for our emoji icons, including a few new emojis, and several new file type icons.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap 4.5.3</title><link href="https://blog.getbootstrap.com/2020/10/13/bootstrap-4-5-3/" rel="alternate" type="text/html" title="Bootstrap 4.5.3" /><published>2020-10-13T00:00:00+00:00</published><updated>2020-10-13T00:00:00+00:00</updated><id>https://blog.getbootstrap.com/2020/10/13/bootstrap-4-5-3</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/10/13/bootstrap-4-5-3/">&lt;p&gt;We’ve updated Bootstrap 4 with a new patch release to fix some bugs, backport some iterative changes from v5, and more. Enjoy!&lt;/p&gt;
-
-&lt;p&gt;As you may already know, we’re alternating between v4 and v5 releases to keep both versions moving in tandem. This helps us close the gap between v4 and v5 and make updating to v5 as easy as possible.&lt;/p&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;npm i bootstrap-icons
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also &lt;a href=&#34;https://github.com/twbs/icons/releases/tag/v1.1.0&#34;&gt;download the release from GitHub&lt;/a&gt;, or &lt;a href=&#34;https://github.com/twbs/icons/releases/download/v1.1.0/bootstrap-icons-1.1.0.zip&#34;&gt;download just the SVGs&lt;/a&gt; (without the rest of the repository files).&lt;/p&gt;
+&lt;h2 id=&#34;figma&#34;&gt;Figma&lt;/h2&gt;
+&lt;p&gt;For the Figma users out there, you can also snag the &lt;a href=&#34;https://www.figma.com/file/6jIgJymnRpMjGSMG2BKNRe/Bootstrap-Icons-v1.1.0?node-id=0%3A1&#34;&gt;icons from Figma&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bootstrap 4.5.3</title>
+      <link>https://blog.getbootstrap.com/2020/10/13/bootstrap-4-5-3/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2020/10/13/bootstrap-4-5-3/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;ve updated Bootstrap 4 with a new patch release to fix some bugs, backport some iterative changes from v5, and more. Enjoy!&lt;/p&gt;
+&lt;p&gt;As you may already know, we&amp;rsquo;re alternating between v4 and v5 releases to keep both versions moving in tandem. This helps us close the gap between v4 and v5 and make updating to v5 as easy as possible.&lt;/p&gt;
 &lt;p&gt;Read on for the highlighted changes.&lt;/p&gt;
-
-&lt;h2 id=&quot;changes&quot;&gt;Changes&lt;/h2&gt;
-
-&lt;p&gt;Also available in the &lt;a href=&quot;https://github.com/twbs/bootstrap/releases/tag/v4.5.3&quot;&gt;v4.5.3 release on GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;css&quot;&gt;CSS&lt;/h3&gt;
-
+&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;
+&lt;p&gt;Also available in the &lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v4.5.3&#34;&gt;v4.5.3 release on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;css&#34;&gt;CSS&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31653&quot;&gt;#31653&lt;/a&gt;: Add a comment to our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;escape-svg&lt;/code&gt; function to note that data URIs must be quoted.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31693&quot;&gt;#31693&lt;/a&gt;: Use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;custom-control&lt;/code&gt; shadow variable instead of the generic &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input-focus-box-shadow&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31793&quot;&gt;#31793&lt;/a&gt;: Backport some v5 changes (improved &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;th&lt;/code&gt; styling in Reboot, custom form field styling when printing, and improvements to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.text-break&lt;/code&gt;).
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/29714&quot;&gt;#29714&lt;/a&gt;: Keep custom check, radio, and switch theme when printing.&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/30781&quot;&gt;#30781&lt;/a&gt;: Reboot’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;th&lt;/code&gt; updates: Inherit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;font-weight: bold&lt;/code&gt; that comes from user agent stylesheets.&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/30932&quot;&gt;#30932&lt;/a&gt;: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.text-break&lt;/code&gt; changes to drop &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;overflow-wrap&lt;/code&gt; and use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;word-wrap&lt;/code&gt; once again&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31754&quot;&gt;#31754&lt;/a&gt;: Improve versions page rendering (also reversed the order while I was here)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31846&quot;&gt;#31846&lt;/a&gt;: Backports the z-index change to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.close&lt;/code&gt; buttons in dismissible &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.alert&lt;/code&gt;s.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;js&quot;&gt;JS&lt;/h3&gt;
-
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31653&#34;&gt;#31653&lt;/a&gt;: Add a comment to our &lt;code&gt;escape-svg&lt;/code&gt; function to note that data URIs must be quoted.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31693&#34;&gt;#31693&lt;/a&gt;: Use the &lt;code&gt;custom-control&lt;/code&gt; shadow variable instead of the generic &lt;code&gt;input-focus-box-shadow&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31793&#34;&gt;#31793&lt;/a&gt;: Backport some v5 changes (improved &lt;code&gt;th&lt;/code&gt; styling in Reboot, custom form field styling when printing, and improvements to &lt;code&gt;.text-break&lt;/code&gt;).
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31000&quot;&gt;#31000&lt;/a&gt;: Avoid multiple change event trigger in buttons plugin. &lt;em&gt;Not applicable to v5 since our button JS plugin has been mostly replaced with pure CSS.&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31673&quot;&gt;#31673&lt;/a&gt;: Fix dropdown variable always evaluating to true.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31696&quot;&gt;#31696&lt;/a&gt;: Ensure &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hidePrevented.bs.modal&lt;/code&gt; can be prevented.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31718&quot;&gt;#31718&lt;/a&gt;: Backports new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$dropdown-padding-x&lt;/code&gt; variable from v5.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/29714&#34;&gt;#29714&lt;/a&gt;: Keep custom check, radio, and switch theme when printing.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/30781&#34;&gt;#30781&lt;/a&gt;: Reboot&amp;rsquo;s &lt;code&gt;th&lt;/code&gt; updates: Inherit &lt;code&gt;font-weight: bold&lt;/code&gt; that comes from user agent stylesheets.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/30932&#34;&gt;#30932&lt;/a&gt;: &lt;code&gt;.text-break&lt;/code&gt; changes to drop &lt;code&gt;overflow-wrap&lt;/code&gt; and use &lt;code&gt;word-wrap&lt;/code&gt; once again&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31754&#34;&gt;#31754&lt;/a&gt;: Improve versions page rendering (also reversed the order while I was here)&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&quot;docs&quot;&gt;Docs&lt;/h3&gt;
-
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31846&#34;&gt;#31846&lt;/a&gt;: Backports the z-index change to &lt;code&gt;.close&lt;/code&gt; buttons in dismissible &lt;code&gt;.alert&lt;/code&gt;s.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;js&#34;&gt;JS&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/30811&quot;&gt;#30811&lt;/a&gt;: Mention GPU acceleration fix in docs callout for popovers. &lt;em&gt;Doesn’t apply to v5 since we’re updating to Popper v2.&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/30838&quot;&gt;#30838&lt;/a&gt;: Explain the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dispose&lt;/code&gt; method more appropriately.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31706&quot;&gt;#31706&lt;/a&gt;: Backports updated margins for code snippets for improved readability.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31769&quot;&gt;#31769&lt;/a&gt;: Backports JS bundle guidance from v5.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31851&quot;&gt;#31851&lt;/a&gt;: Backports mention of missing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;to&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nextwhenvisible&lt;/code&gt; methods.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31000&#34;&gt;#31000&lt;/a&gt;: Avoid multiple change event trigger in buttons plugin. &lt;em&gt;Not applicable to v5 since our button JS plugin has been mostly replaced with pure CSS.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31673&#34;&gt;#31673&lt;/a&gt;: Fix dropdown variable always evaluating to true.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31696&#34;&gt;#31696&lt;/a&gt;: Ensure &lt;code&gt;hidePrevented.bs.modal&lt;/code&gt; can be prevented.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31718&#34;&gt;#31718&lt;/a&gt;: Backports new &lt;code&gt;$dropdown-padding-x&lt;/code&gt; variable from v5.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&quot;misc&quot;&gt;Misc&lt;/h3&gt;
-
+&lt;h3 id=&#34;docs&#34;&gt;Docs&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31297&quot;&gt;#31297&lt;/a&gt;: Switch to xo ESLint config&lt;/li&gt;
-  &lt;li&gt;Updated devDependencies versions&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/30811&#34;&gt;#30811&lt;/a&gt;: Mention GPU acceleration fix in docs callout for popovers. &lt;em&gt;Doesn&amp;rsquo;t apply to v5 since we&amp;rsquo;re updating to Popper v2.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/30838&#34;&gt;#30838&lt;/a&gt;: Explain the &lt;code&gt;dispose&lt;/code&gt; method more appropriately.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31706&#34;&gt;#31706&lt;/a&gt;: Backports updated margins for code snippets for improved readability.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31769&#34;&gt;#31769&lt;/a&gt;: Backports JS bundle guidance from v5.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31851&#34;&gt;#31851&lt;/a&gt;: Backports mention of missing &lt;code&gt;to&lt;/code&gt; and &lt;code&gt;nextwhenvisible&lt;/code&gt; methods.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h2 id=&quot;next-up&quot;&gt;Next up&lt;/h2&gt;
-
-&lt;p&gt;We’ll be back to v5 with our third alpha release coming in a couple of weeks. After that, we’ll ship another v4 update with v4.6.0 that continues the v5 backports and feature development. Please keep the feedback coming on what we can improve, how our releases are performing, and any other suggestions.&lt;/p&gt;
-
-&lt;h2 id=&quot;support-the-team&quot;&gt;Support the team&lt;/h2&gt;
-
-&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">We’ve updated Bootstrap 4 with a new patch release to fix some bugs, backport some iterative changes from v5, and more. Enjoy!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bootstrap 5 Alpha 2</title><link href="https://blog.getbootstrap.com/2020/09/29/bootstrap-5-alpha-2/" rel="alternate" type="text/html" title="Bootstrap 5 Alpha 2" /><published>2020-09-29T11:00:00+00:00</published><updated>2020-09-29T11:00:00+00:00</updated><id>https://blog.getbootstrap.com/2020/09/29/bootstrap-5-alpha-2</id><content type="html" xml:base="https://blog.getbootstrap.com/2020/09/29/bootstrap-5-alpha-2/">&lt;p&gt;We’re back at it again with a brand new alpha release of Bootstrap 5! Our second alpha has brought some new and improved features, color contrast improvements, improved helpers and utilities, and some documentation design updates.&lt;/p&gt;
-
-&lt;p&gt;Check out the latest in the docs at &lt;a href=&quot;https://v5.getbootstrap.com&quot;&gt;https://v5.getbootstrap.com&lt;/a&gt;. &lt;a href=&quot;https://github.com/twbs/bootstrap/releases/tag/v5.0.0-alpha2&quot;&gt;Read the release notes&lt;/a&gt; for a full list of changes since Alpha 1. Our &lt;a href=&quot;https://v5.getbootstrap.com/docs/5.0/migration/&quot;&gt;migration guide&lt;/a&gt; has also been updated with a new section for Alpha 2.&lt;/p&gt;
-
-&lt;h2 id=&quot;updated-docs-nav&quot;&gt;Updated docs nav&lt;/h2&gt;
-
-&lt;p&gt;We’ve cleaned up the navigation in our docs to make things a little easier to use while on a mobile device or a narrow viewport. We’ve redesigned the main navbar to hide links on small devices, and when expanded, those navigation links now have larger tap targets.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/09/v5a2-nav-home.png&quot; alt=&quot;Updated Bootstrap nav home&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Our subnav has also be streamlined to take up a single horizontal bad on mobile, giving more space for documentation. We’ve also differentiated the expanding and collapsing menu icons between the two navs.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020/09/v5a2-nav-docs.png&quot; alt=&quot;Updated Bootstrap nav docs&quot; /&gt;&lt;/p&gt;
-
+&lt;h3 id=&#34;misc&#34;&gt;Misc&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31297&#34;&gt;#31297&lt;/a&gt;: Switch to xo ESLint config&lt;/li&gt;
+&lt;li&gt;Updated devDependencies versions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;next-up&#34;&gt;Next up&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;ll be back to v5 with our third alpha release coming in a couple of weeks. After that, we&amp;rsquo;ll ship another v4 update with v4.6.0 that continues the v5 backports and feature development. Please keep the feedback coming on what we can improve, how our releases are performing, and any other suggestions.&lt;/p&gt;
+&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
+&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&#39; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bootstrap 5 Alpha 2</title>
+      <link>https://blog.getbootstrap.com/2020/09/29/bootstrap-5-alpha-2/</link>
+      <pubDate>Tue, 29 Sep 2020 11:00:00 +0000</pubDate>
+      
+      <guid>https://blog.getbootstrap.com/2020/09/29/bootstrap-5-alpha-2/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;re back at it again with a brand new alpha release of Bootstrap 5! Our second alpha has brought some new and improved features, color contrast improvements, improved helpers and utilities, and some documentation design updates.&lt;/p&gt;
+&lt;p&gt;Check out the latest in the docs at &lt;a href=&#34;https://v5.getbootstrap.com&#34;&gt;https://v5.getbootstrap.com&lt;/a&gt;. &lt;a href=&#34;https://github.com/twbs/bootstrap/releases/tag/v5.0.0-alpha2&#34;&gt;Read the release notes&lt;/a&gt; for a full list of changes since Alpha 1. Our &lt;a href=&#34;https://v5.getbootstrap.com/docs/5.0/migration/&#34;&gt;migration guide&lt;/a&gt; has also been updated with a new section for Alpha 2.&lt;/p&gt;
+&lt;h2 id=&#34;updated-docs-nav&#34;&gt;Updated docs nav&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;ve cleaned up the navigation in our docs to make things a little easier to use while on a mobile device or a narrow viewport. We&amp;rsquo;ve redesigned the main navbar to hide links on small devices, and when expanded, those navigation links now have larger tap targets.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/09/v5a2-nav-home.png&#34; alt=&#34;Updated Bootstrap nav home&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Our subnav has also be streamlined to take up a single horizontal bad on mobile, giving more space for documentation. We&amp;rsquo;ve also differentiated the expanding and collapsing menu icons between the two navs.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/09/v5a2-nav-docs.png&#34; alt=&#34;Updated Bootstrap nav docs&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Together this should make it a little faster and easier to navigate our docs, and serve as a fun little demo for others.&lt;/p&gt;
-
-&lt;h2 id=&quot;dark-carousel&quot;&gt;Dark carousel&lt;/h2&gt;
-
-&lt;p&gt;Add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.carousel-dark&lt;/code&gt; to any &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.carousel&lt;/code&gt; to switch from the default white text, controls, and indicators to black.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://v5.getbootstrap.com/docs/5.0/components/carousel/#dark-variant&quot;&gt;&lt;img src=&quot;/assets/img/2020/09/v5a2-carousel-dark.png&quot; alt=&quot;Example dark carousel&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Values are configurable via Sass variables. To save on filesize, we’re using a CSS &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filter&lt;/code&gt; to invert out SVGs for the carouse controls. Pretty neat if you ask us!&lt;/p&gt;
-
-&lt;h2 id=&quot;dark-dropdowns&quot;&gt;Dark dropdowns&lt;/h2&gt;
-
-&lt;p&gt;For the first time since Bootstrap v1 nearly nine years ago, we have dark dropdown menus! Add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.dropdown-menu-dark&lt;/code&gt; to any dropdown menu to change the appearance. Dark dropdowns are opt-in, so you’ll need to add the class as you go.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://v5.getbootstrap.com/docs/5.0/components/dropdowns/#dark-dropdowns&quot;&gt;&lt;img src=&quot;/assets/img/2020/09/v5a2-dropdowns-dark.png&quot; alt=&quot;Example dark dropdowns&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;We’d like to revisit some of this later in v5 with minor releases that advance dark mode throughout the entire project. Until then, enjoy the new classes!&lt;/p&gt;
-
-&lt;h2 id=&quot;redesigned-close-button&quot;&gt;Redesigned close button&lt;/h2&gt;
-
+&lt;h2 id=&#34;dark-carousel&#34;&gt;Dark carousel&lt;/h2&gt;
+&lt;p&gt;Add &lt;code&gt;.carousel-dark&lt;/code&gt; to any &lt;code&gt;.carousel&lt;/code&gt; to switch from the default white text, controls, and indicators to black.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://v5.getbootstrap.com/docs/5.0/components/carousel/#dark-variant&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/09/v5a2-carousel-dark.png&#34; alt=&#34;Example dark carousel&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Values are configurable via Sass variables. To save on filesize, we&amp;rsquo;re using a CSS &lt;code&gt;filter&lt;/code&gt; to invert out SVGs for the carouse controls. Pretty neat if you ask us!&lt;/p&gt;
+&lt;h2 id=&#34;dark-dropdowns&#34;&gt;Dark dropdowns&lt;/h2&gt;
+&lt;p&gt;For the first time since Bootstrap v1 nearly nine years ago, we have dark dropdown menus! Add &lt;code&gt;.dropdown-menu-dark&lt;/code&gt; to any dropdown menu to change the appearance. Dark dropdowns are opt-in, so you&amp;rsquo;ll need to add the class as you go.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://v5.getbootstrap.com/docs/5.0/components/dropdowns/#dark-dropdowns&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/09/v5a2-dropdowns-dark.png&#34; alt=&#34;Example dark dropdowns&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;d like to revisit some of this later in v5 with minor releases that advance dark mode throughout the entire project. Until then, enjoy the new classes!&lt;/p&gt;
+&lt;h2 id=&#34;redesigned-close-button&#34;&gt;Redesigned close button&lt;/h2&gt;
 &lt;p&gt;Our close button has been renamed, redesigned, new focus state, and a new color option.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://v5.getbootstrap.com/docs/5.0/components/close-button/&quot;&gt;&lt;img src=&quot;/assets/img/2020/09/v5a2-close-btn.png&quot; alt=&quot;Example close button&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;We’ve renamed the class from the rather generic &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.close&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.btn-close&lt;/code&gt;. In addition, we’ve dropped the use of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;times;&lt;/code&gt; in our HTML for an SVG &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;background-image&lt;/code&gt; via CSS. With updated styling all around, the close button has a clearer focus state and even an all-new white variant (also powered by a CSS &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filter&lt;/code&gt;).&lt;/p&gt;
-
-&lt;h2 id=&quot;position-utilities&quot;&gt;Position utilities&lt;/h2&gt;
-
-&lt;p&gt;Thanks to our contributors, we’ve added new directional positioning utilities. Quickly position an element with our new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;top&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;right&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bottom&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;left&lt;/code&gt; utilities with support for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;50%&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;100%&lt;/code&gt; by default.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://v5.getbootstrap.com/docs/5.0/utilities/position/&quot;&gt;&lt;img src=&quot;/assets/img/2020/09/v5a2-position-utils.png&quot; alt=&quot;Example position utilities&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;a href=&#34;https://v5.getbootstrap.com/docs/5.0/components/close-button/&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/09/v5a2-close-btn.png&#34; alt=&#34;Example close button&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve renamed the class from the rather generic &lt;code&gt;.close&lt;/code&gt; to &lt;code&gt;.btn-close&lt;/code&gt;. In addition, we&amp;rsquo;ve dropped the use of &lt;code&gt;&amp;amp;times;&lt;/code&gt; in our HTML for an SVG &lt;code&gt;background-image&lt;/code&gt; via CSS. With updated styling all around, the close button has a clearer focus state and even an all-new white variant (also powered by a CSS &lt;code&gt;filter&lt;/code&gt;).&lt;/p&gt;
+&lt;h2 id=&#34;position-utilities&#34;&gt;Position utilities&lt;/h2&gt;
+&lt;p&gt;Thanks to our contributors, we&amp;rsquo;ve added new directional positioning utilities. Quickly position an element with our new &lt;code&gt;top&lt;/code&gt;, &lt;code&gt;right&lt;/code&gt;, &lt;code&gt;bottom&lt;/code&gt;, and &lt;code&gt;left&lt;/code&gt; utilities with support for &lt;code&gt;0&lt;/code&gt;, &lt;code&gt;50%&lt;/code&gt;, and &lt;code&gt;100%&lt;/code&gt; by default.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://v5.getbootstrap.com/docs/5.0/utilities/position/&#34;&gt;&lt;img src=&#34;https://blog.getbootstrap.com/assets/img/2020/09/v5a2-position-utils.png&#34; alt=&#34;Example position utilities&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Combine with new translate utilities to center elements on an edge or corner, too! The new utilities are configurable and extensible thanks to the utilities API and some smart Sass map defaults.&lt;/p&gt;
-
-&lt;h2 id=&quot;more-highlights&quot;&gt;More highlights&lt;/h2&gt;
-
+&lt;h2 id=&#34;more-highlights&#34;&gt;More highlights&lt;/h2&gt;
 &lt;p&gt;Some other incremental changes to a few components and changes include:&lt;/p&gt;
-
 &lt;ul&gt;
-  &lt;li&gt;Container horizontal &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;padding&lt;/code&gt; has been updated to match the row gutters variables and values.&lt;/li&gt;
-  &lt;li&gt;Checkboxes and radios downsized to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1em&lt;/code&gt; from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.25em&lt;/code&gt; for improved font scaling support.&lt;/li&gt;
-  &lt;li&gt;Improved colors with green and cyan getting new values, plus higher contrast ratios all around.&lt;/li&gt;
-  &lt;li&gt;Improved toast styling, now without &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;overflow: hidden&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Badge padding increased a smidge.&lt;/li&gt;
-  &lt;li&gt;Revamped “responsive embed” helpers, now called ratio helpers. New class names across the board, more flexible styles, and a new CSS variable for custom dynamic and responsive ratios.&lt;/li&gt;
-  &lt;li&gt;Screen reader classes are now “visually hidden” classes.&lt;/li&gt;
-  &lt;li&gt;New &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.border-width&lt;/code&gt; utility.&lt;/li&gt;
+&lt;li&gt;Container horizontal &lt;code&gt;padding&lt;/code&gt; has been updated to match the row gutters variables and values.&lt;/li&gt;
+&lt;li&gt;Checkboxes and radios downsized to &lt;code&gt;1em&lt;/code&gt; from &lt;code&gt;1.25em&lt;/code&gt; for improved font scaling support.&lt;/li&gt;
+&lt;li&gt;Improved colors with green and cyan getting new values, plus higher contrast ratios all around.&lt;/li&gt;
+&lt;li&gt;Improved toast styling, now without &lt;code&gt;overflow: hidden&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Badge padding increased a smidge.&lt;/li&gt;
+&lt;li&gt;Revamped &amp;ldquo;responsive embed&amp;rdquo; helpers, now called ratio helpers. New class names across the board, more flexible styles, and a new CSS variable for custom dynamic and responsive ratios.&lt;/li&gt;
+&lt;li&gt;Screen reader classes are now &amp;ldquo;visually hidden&amp;rdquo; classes.&lt;/li&gt;
+&lt;li&gt;New &lt;code&gt;.border-width&lt;/code&gt; utility.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;See all the changes in the &lt;a href=&quot;https://github.com/twbs/bootstrap/projects/21&quot;&gt;v5 Alpha 2 project board&lt;/a&gt; and be sure to &lt;a href=&quot;https://v5.getbootstrap.com/docs/5.0/migration/&quot;&gt;read the Migration guide&lt;/a&gt; for details on what’s changed since Alpha 1.&lt;/p&gt;
-
-&lt;h2 id=&quot;coming-in-alpha-3&quot;&gt;Coming in Alpha 3&lt;/h2&gt;
-
-&lt;p&gt;We’ve pushed some additional breaking changes and important component updates to Alpha 3. To give you a heads up, here are some important upcoming moves:&lt;/p&gt;
-
+&lt;p&gt;See all the changes in the &lt;a href=&#34;https://github.com/twbs/bootstrap/projects/21&#34;&gt;v5 Alpha 2 project board&lt;/a&gt; and be sure to &lt;a href=&#34;https://v5.getbootstrap.com/docs/5.0/migration/&#34;&gt;read the Migration guide&lt;/a&gt; for details on what&amp;rsquo;s changed since Alpha 1.&lt;/p&gt;
+&lt;h2 id=&#34;coming-in-alpha-3&#34;&gt;Coming in Alpha 3&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;ve pushed some additional breaking changes and important component updates to Alpha 3. To give you a heads up, here are some important upcoming moves:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Offcanvas support is coming thanks to &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31285&quot;&gt;new side modals&lt;/a&gt;!&lt;/li&gt;
-  &lt;li&gt;We’re &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/31666&quot;&gt;revamping the input group component&lt;/a&gt;, dropping support for quite a few variations. It’s too complex, supports too many variations, and has had the most annoying &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;border-radius&lt;/code&gt; bug through all of v4. (I’m so sorry about that!)&lt;/li&gt;
-  &lt;li&gt;We’re &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/30449&quot;&gt;upgrading floating labels&lt;/a&gt; from a docs Example into a fully fledge form layout option, with support for textual inputs, selects, and textareas.&lt;/li&gt;
-  &lt;li&gt;We’re &lt;a href=&quot;https://github.com/twbs/bootstrap/pull/30571&quot;&gt;adding font-size utilities&lt;/a&gt; and updating our font-weight utilities.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/twbs/bootstrap/pull/30980&quot;&gt;RTL is still coming!&lt;/a&gt; The PR is being reviewed by our team and we’re hoping to land it in Alpha 3 so we can get some folks testing with it.&lt;/li&gt;
+&lt;li&gt;Offcanvas support is coming thanks to &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31285&#34;&gt;new side modals&lt;/a&gt;!&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;re &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/31666&#34;&gt;revamping the input group component&lt;/a&gt;, dropping support for quite a few variations. It&amp;rsquo;s too complex, supports too many variations, and has had the most annoying &lt;code&gt;border-radius&lt;/code&gt; bug through all of v4. (I&amp;rsquo;m so sorry about that!)&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;re &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/30449&#34;&gt;upgrading floating labels&lt;/a&gt; from a docs Example into a fully fledge form layout option, with support for textual inputs, selects, and textareas.&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;re &lt;a href=&#34;https://github.com/twbs/bootstrap/pull/30571&#34;&gt;adding font-size utilities&lt;/a&gt; and updating our font-weight utilities.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/30980&#34;&gt;RTL is still coming!&lt;/a&gt; The PR is being reviewed by our team and we&amp;rsquo;re hoping to land it in Alpha 3 so we can get some folks testing with it.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;For a more up to date list of changes, be sure to follow along with the &lt;a href=&quot;https://github.com/twbs/bootstrap/projects/22&quot;&gt;v5 Alpha 3 project board&lt;/a&gt;. More docs improvements are planned with the potential for more breaking changes as well. From there it’s onto final breaking changes in Beta 3.&lt;/p&gt;
-
-&lt;h2 id=&quot;release-expectations&quot;&gt;Release expectations&lt;/h2&gt;
-
-&lt;p&gt;We’ll be alternating releases across v4 and v5 to keep the momentum up. We’re shipping v4.5.3 next and then moving right back to v5 for Alpha 3. We’ve noted our intended &lt;a href=&quot;https://github.com/twbs/release#upcoming-release-schedule&quot;&gt;release schedule in our release repo&lt;/a&gt;. We’ll also keep updating that repo’s readme as we go.&lt;/p&gt;
-
-&lt;h2 id=&quot;get-started&quot;&gt;Get started&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&quot;https://v5.getbootstrap.com&quot;&gt;https://v5.getbootstrap.com&lt;/a&gt; to explore the new release.&lt;/strong&gt; We’ve also published this updated as a pre-release to npm, so if you’re feeling bold or are curious about what’s new, you can pull the latest in that way.&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i bootstrap@next
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;support-the-team&quot;&gt;Support the team&lt;/h2&gt;
-
-&lt;p&gt;Visit our &lt;a href=&quot;https://opencollective.com/bootstrap&quot;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&quot;https://github.com/orgs/twbs/people&quot;&gt;team members&lt;/a&gt;’ GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;</content><author><name>Mark Otto</name></author><summary type="html">We’re back at it again with a brand new alpha release of Bootstrap 5! Our second alpha has brought some new and improved features, color contrast improvements, improved helpers and utilities, and some documentation design updates.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" /><media:content medium="image" url="https://blog.getbootstrap.com/assets/img/bootstrap-social.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;For a more up to date list of changes, be sure to follow along with the &lt;a href=&#34;https://github.com/twbs/bootstrap/projects/22&#34;&gt;v5 Alpha 3 project board&lt;/a&gt;. More docs improvements are planned with the potential for more breaking changes as well. From there it&amp;rsquo;s onto final breaking changes in Beta 3.&lt;/p&gt;
+&lt;h2 id=&#34;release-expectations&#34;&gt;Release expectations&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;ll be alternating releases across v4 and v5 to keep the momentum up. We&amp;rsquo;re shipping v4.5.3 next and then moving right back to v5 for Alpha 3. We&amp;rsquo;ve noted our intended &lt;a href=&#34;https://github.com/twbs/release#upcoming-release-schedule&#34;&gt;release schedule in our release repo&lt;/a&gt;. We&amp;rsquo;ll also keep updating that repo&amp;rsquo;s readme as we go.&lt;/p&gt;
+&lt;h2 id=&#34;get-started&#34;&gt;Get started&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Head to &lt;a href=&#34;https://v5.getbootstrap.com&#34;&gt;https://v5.getbootstrap.com&lt;/a&gt; to explore the new release.&lt;/strong&gt; We&amp;rsquo;ve also published this updated as a pre-release to npm, so if you&amp;rsquo;re feeling bold or are curious about what&amp;rsquo;s new, you can pull the latest in that way.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;npm i bootstrap@next
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;support-the-team&#34;&gt;Support the team&lt;/h2&gt;
+&lt;p&gt;Visit our &lt;a href=&#34;https://opencollective.com/bootstrap&#34;&gt;Open Collective page&lt;/a&gt; or our &lt;a href=&#34;https://github.com/orgs/twbs/people&#34;&gt;team members&lt;/a&gt;&#39; GitHub profiles to help support the maintainers contributing to Bootstrap.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
