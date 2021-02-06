@@ -33,10 +33,10 @@ Hit the [project repository](https://github.com/twbs/bootstrap) or [Sass reposit
 
 Since our last release, we've open sourced two new tools:
 
-- [Bootlint]({{< relref "/posts/2014/2014-09-23-bootlint" >}}), a custom linter for all your Bootstrap projects.
-- [Rorschach]({{< relref "/posts/2014/2014-10-13-rorschach" >}}), a bot for checking new pull requests for common mistakes.
+- [Bootlint]({{< relref "/posts/2014/bootlint" >}}), a custom linter for all your Bootstrap projects.
+- [Rorschach]({{< relref "/posts/2014/rorschach" >}}), a bot for checking new pull requests for common mistakes.
 
-They join [LMVTFY]({{< relref "/posts/2014/2014-06-25-lmvtfy" >}}), our bot for quickly validating HTML in live examples. As the project, team, and community continue to grow, look for even more awesome tools to be open sourced.
+They join [LMVTFY]({{< relref "/posts/2014/lmvtfy" >}}), our bot for quickly validating HTML in live examples. As the project, team, and community continue to grow, look for even more awesome tools to be open sourced.
 
 ## Onward to Bootstrap 4
 
